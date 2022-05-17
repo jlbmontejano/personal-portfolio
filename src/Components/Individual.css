@@ -1,0 +1,27 @@
+.individualCard {
+    border: 2px solid var(--clr-dark);
+    width: 90%;
+    transition: all .3s ease-in-out;
+    font-size: .8em;
+    border-radius: 15px;
+}
+
+.individualCard img {
+    width: 100%;
+    border-radius: 13px 13px 0 0;
+}
+
+.individualCard p {
+    margin: 25px;
+    color: var(--clr-dark);
+}
+
+.individualCard:hover {
+    background-color: var(--clr-accent);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.individualCard:hover p {
+    color: var(--clr-light);
+}
