@@ -18,9 +18,10 @@ const Footer = () => {
         <span>LinkedIn</span>
       </a>
       <a
-        href="https://github.com/jlbmontejano"
+        href="./images/jlbm-resume.pdf"
         target="_blank"
         rel="noreferrer"
+        download="Jorge Luis Buenrostro Montejano CV"
       >
         <span>Resume</span>
       </a>
