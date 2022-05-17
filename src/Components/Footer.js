@@ -3,13 +3,25 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="footer">
-      <a href="https://github.com/jlbmontejano">
+      <a
+        href="https://github.com/jlbmontejano"
+        target="_blank"
+        rel="noreferrer"
+      >
         <span>GitHub</span>
       </a>
-      <a href="https://www.linkedin.com/in/jlbmontejano/">
+      <a
+        href="https://www.linkedin.com/in/jlbmontejano/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <span>LinkedIn</span>
       </a>
-      <a href="https://github.com/jlbmontejano">
+      <a
+        href="https://github.com/jlbmontejano"
+        target="_blank"
+        rel="noreferrer"
+      >
         <span>Resume</span>
       </a>
     </div>
