@@ -4,14 +4,61 @@
   text-align: center;
 }
 
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 h1 {
+  display: inline;
   font-size: 4.5em;
-  margin-bottom: 0;
+  position: relative;
+}
+
+h1::before,
+h1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1::before {
+  background: var(--clr-light);
+  animation: typewriter var(--typewriterSpeed) steps(16) 1s forwards;
+}
+
+h1::after {
+  width: 4px;
+  background: var(--clr-dark);
+  animation:
+    typewriter var(--typewriterSpeed) steps(16) 1s forwards,
+    blink 750ms steps(16) infinite;
+    
 }
 
 h2 {
   font-size: 2.25em;
   margin-top: 0;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease 7s forwards;
 }
 
 h3 {
@@ -32,12 +79,12 @@ hr {
   border: none;
   height: 3px;
   width: 80%;
-
 }
 
 .navigation {
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .navigation,

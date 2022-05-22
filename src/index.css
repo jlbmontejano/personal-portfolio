@@ -12,7 +12,7 @@ body {
 }
 
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-size: 20px;
   color: var(--clr-dark);
   background-color: var(--clr-light);
@@ -22,4 +22,6 @@ body {
   --clr-dark: #393D3F;
   --clr-light: #FDFDFF;
   --clr-accent: #62929E;
+
+  --typewriterSpeed: 6s;
 }
