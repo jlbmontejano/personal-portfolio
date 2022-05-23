@@ -15,7 +15,7 @@ const Projects = () => {
   const Robofriends = {
     src: SourceRobo,
     description:
-      "Displays all your robofriends from an API, you can then filter your search through the search box",
+      "Displays all your robofriends from an API, you can then filter your search through the search box.",
     link: "https://jlbm-robofriends.herokuapp.com/",
   };
   const FaceRecognition = {
