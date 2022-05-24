@@ -29,7 +29,7 @@ const Projects = () => {
   };
   const imageSource = [FaceRecognition, Robofriends, AdviceGenerator];
   return (
-    <div>
+    <div id="projects">
       <h3>Projects</h3>
       <div className="project-section">
         {imageSource.map(image => (
