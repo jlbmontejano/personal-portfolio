@@ -18,10 +18,10 @@ const Footer = () => {
         <span>LinkedIn</span>
       </a>
       <a
-        href="./images/jlbm-resume.pdf"
+        href={"/jlbm-cv.pdf"}
+        download="Jorge Luis Buenrostro Montejano CV"
         target="_blank"
         rel="noreferrer"
-        download="Jorge Luis Buenrostro Montejano CV"
       >
         <span>Resume</span>
       </a>
