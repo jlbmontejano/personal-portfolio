@@ -13,7 +13,7 @@ body {
 
 body {
   font-family: 'Roboto Mono', monospace;
-  font-size: 20px;
+  font-size: 16px;
   color: var(--clr-dark);
   background-color: var(--clr-light);
 }
@@ -24,4 +24,75 @@ body {
   --clr-accent: #62929E;
 
   --typewriterSpeed: 4.5s;
+}
+
+h1 {
+  display: inline;
+  font-size: 1.75em;
+  position: relative;
+}
+
+h2 {
+  font-size: 1.30em;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.15em;
+}
+
+h4 {
+  margin: 0;
+}
+
+hr {
+  background-color: var(--clr-dark);
+  color: var(--clr-dark);
+  border: none;
+  height: 3px;
+  width: 80%;
+}
+
+@media (min-width: 700px) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 3.25em;
+  }
+
+  h2 {
+    font-size: 1.85em;
+  }
+
+  h3 {
+    font-size: 1.40em;
+  }
+
+  h4 {
+    font-size: 1.15em;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 4.5em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3 {
+    font-size: 1.75em;
+  }
+
+  h4 {
+    font-size: 1.25em;
+  }
 }

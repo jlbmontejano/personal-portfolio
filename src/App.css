@@ -16,12 +16,6 @@
   }
 }
 
-h1 {
-  display: inline;
-  font-size: 4.5em;
-  position: relative;
-}
-
 h1::before,
 h1::after {
   content: '';
@@ -43,32 +37,7 @@ h1::after {
   animation:
     typewriter var(--typewriterSpeed) steps(16) 1s forwards,
     blink 750ms steps(16) infinite;
-    
-}
 
-h2 {
-  font-size: 2.25em;
-  margin-top: 0;
-}
-
-h3 {
-  font-size: 1.75em;
-}
-
-h4 {
-  font-size: 1.25em;
-}
-
-h4 {
-  margin: 0;
-}
-
-hr {
-  background-color: var(--clr-dark);
-  color: var(--clr-dark);
-  border: none;
-  height: 3px;
-  width: 80%;
 }
 
 .navigation {
@@ -97,15 +66,9 @@ hr {
   width: 75%;
 }
 
-.image {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
 img {
-  width: 45%;
-  height: auto;
+  width: 100%;
+  max-width: 720px;
 }
 
 ul {
@@ -123,4 +86,18 @@ a {
 
 .footer {
   margin-top: auto;
+}
+
+@media (min-width: 700px) {
+  .main-body {
+    width: 85%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .image {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }

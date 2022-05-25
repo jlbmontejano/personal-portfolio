@@ -1,6 +1,15 @@
 .project-section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     margin: 1.5em;
     justify-items: center;
+    gap: 1em;
+}
+
+@media (min-width: 1000px) {
+    .project-section {
+        display: grid;
+        grid-template-rows: none;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

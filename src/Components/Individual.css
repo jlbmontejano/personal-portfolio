@@ -2,7 +2,7 @@
     border: 2px solid var(--clr-dark);
     width: 90%;
     transition: all .3s ease-in-out;
-    font-size: .8em;
+    font-size: inherit;
     border-radius: 15px;
 }
 
