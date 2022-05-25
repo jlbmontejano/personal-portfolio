@@ -1,9 +1,9 @@
 .individualCard {
     border: 2px solid var(--clr-dark);
-    width: 90%;
     transition: all .3s ease-in-out;
     font-size: inherit;
     border-radius: 15px;
+    max-width: 600px;
 }
 
 .individualCard img {
@@ -12,8 +12,9 @@
 }
 
 .individualCard p {
-    margin: 25px;
+    margin: 1em;
     color: var(--clr-dark);
+    font-size: .9em;
 }
 
 .individualCard:hover {
