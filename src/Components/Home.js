@@ -5,7 +5,7 @@ const Home = () => {
     <div>
       <h1>Jorge Buenrostro</h1>
       <h2>Frontend Developer</h2>
-      <hr />
+      <hr id="about-me" />
     </div>
   );
 };

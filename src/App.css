@@ -63,7 +63,7 @@ h1::after {
 
 .main-body {
   margin: 0 auto;
-  width: 75%;
+  width: 90%;
 }
 
 img {
@@ -90,7 +90,7 @@ a {
 
 @media (min-width: 700px) {
   .main-body {
-    width: 85%;
+    width: 80%;
   }
 }
 
