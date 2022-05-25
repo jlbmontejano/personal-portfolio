@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.c934f9a7.css",
-    "main.js": "/personal-portfolio/static/js/main.f071617e.js",
+    "main.css": "/personal-portfolio/static/css/main.703165bf.css",
+    "main.js": "/personal-portfolio/static/js/main.d7c7eecd.js",
     "static/js/787.fb771931.chunk.js": "/personal-portfolio/static/js/787.fb771931.chunk.js",
     "static/media/my-photo.jpg": "/personal-portfolio/static/media/my-photo.9041fc23fb4758e0dcf9.jpg",
     "static/media/face-recognition.png": "/personal-portfolio/static/media/face-recognition.3710ae0d5a34aacdf995.png",
     "static/media/robofriends.png": "/personal-portfolio/static/media/robofriends.fca60fdb387858884b2e.png",
     "static/media/advice-generator.jpg": "/personal-portfolio/static/media/advice-generator.deb16a17c78c3297480f.jpg",
     "index.html": "/personal-portfolio/index.html",
-    "main.c934f9a7.css.map": "/personal-portfolio/static/css/main.c934f9a7.css.map",
-    "main.f071617e.js.map": "/personal-portfolio/static/js/main.f071617e.js.map",
+    "main.703165bf.css.map": "/personal-portfolio/static/css/main.703165bf.css.map",
+    "main.d7c7eecd.js.map": "/personal-portfolio/static/js/main.d7c7eecd.js.map",
     "787.fb771931.chunk.js.map": "/personal-portfolio/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c934f9a7.css",
-    "static/js/main.f071617e.js"
+    "static/css/main.703165bf.css",
+    "static/js/main.d7c7eecd.js"
   ]
 }
