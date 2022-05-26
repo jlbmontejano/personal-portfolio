@@ -32,6 +32,7 @@ const AboutMe = () => {
           </ul>
         </div>
       </div>
+      <hr id="projects" style={{visibility: "hidden"}}/>
     </div>
   );
 };
