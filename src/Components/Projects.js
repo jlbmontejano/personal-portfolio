@@ -1,27 +1,24 @@
 import React from "react";
 import Individual from "./Individual";
-import SourceAdvice from "./images/advice-generator.jpg";
-import SourceRobo from "./images/robofriends.png";
-import SourceFace from "./images/face-recognition.png";
 import "./Project-Section.css";
 
 const Projects = () => {
   const AdviceGenerator = {
-    src: SourceAdvice,
+    src: process.env.PUBLIC_URL + "images/advice-generator.jpg",
     description:
       "Small project that fetches an advice from an API every time the button is pressed.",
     link: "https://jlbm-advice-generator.herokuapp.com/",
     key: 0,
   };
   const Robofriends = {
-    src: SourceRobo,
+    src: process.env.PUBLIC_URL + "images/robofriends.png",
     description:
       "Displays all your robofriends from an API, you can then filter your search through the search box.",
     link: "https://jlbm-robofriends.herokuapp.com/",
     key: 1,
   };
   const FaceRecognition = {
-    src: SourceFace,
+    src: process.env.PUBLIC_URL + "images/face-recognition.png",
     description:
       "Full stack project: you can register, sign in, sign out and upload a photo for an API to identify the faces within it.",
     link: "https://face-rec-pro.herokuapp.com/",

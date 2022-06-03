@@ -1,5 +1,4 @@
 import React from "react";
-import imgSource from "./images/my-photo.jpg";
 
 const AboutMe = () => {
   return (
@@ -14,7 +13,10 @@ const AboutMe = () => {
         most invaluable things in life.
       </p>
       <div className="image">
-        <img src={imgSource} alt="myself" />
+        <img
+          src={process.env.PUBLIC_URL + "images/my-photo.jpg"}
+          alt="myself"
+        />
         <div>
           <h4>Languages: </h4>
           <ul>
@@ -32,7 +34,7 @@ const AboutMe = () => {
           </ul>
         </div>
       </div>
-      <hr id="projects" style={{visibility: "hidden"}}/>
+      <hr id="projects" style={{ visibility: "hidden" }} />
     </div>
   );
 };

@@ -19,9 +19,9 @@ body {
 }
 
 :root {
-  --clr-dark: #393D3F;
-  --clr-light: #FDFDFF;
-  --clr-accent: #62929E;
+  --clr-dark: #000000;
+  --clr-light: #FFFFFF;
+  --clr-accent: #2EAF7D;
 
   --typewriterSpeed: 4.5s;
 }
