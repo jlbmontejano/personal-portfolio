@@ -7,26 +7,13 @@ import "./App.css";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="App" id="home">
       <Navigation />
       <Home />
       <div className="main-body">
         <AboutMe />
         <Projects />
       </div>
-      <p>
-        You can download my resume
-        <a
-          href={"/jlbm-cv.pdf"}
-          download="Jorge Luis Buenrostro Montejano CV"
-          target="_blank"
-          rel="noreferrer"
-          className="resume"
-        >
-          here
-        </a>
-        .
-      </p>
       <Footer />
     </div>
   );

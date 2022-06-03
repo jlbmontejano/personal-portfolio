@@ -15,12 +15,10 @@
 .footer {
   display: flex;
   justify-content: space-evenly;
-
   background-color: var(--clr-accent);
 }
 
-.navigation span:hover,
-.footer span:hover {
+.navigation span:hover {
   cursor: pointer;
   color: var(--clr-dark);
   text-decoration: underline;
@@ -44,29 +42,34 @@ li {
   list-style: none;
 }
 
+.note {
+  font-size: .8em;
+}
+
 a {
   text-decoration: none;
   color: var(--clr-light);
 }
 
-.resume {
-  text-decoration: underline;
-  color: var(--clr-dark)
-}
-
 .footer {
-  padding: 1em;
-  height: 4em;
+  padding: .5em;
+  height: 3em;
 }
 
 .logo {
   width: 35px;
 }
 
+.logo:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
 @media (min-width: 700px) {
   .main-body {
     width: 80%;
   }
+
   .logo {
     width: 40px;
   }

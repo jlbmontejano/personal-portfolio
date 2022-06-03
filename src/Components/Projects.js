@@ -28,6 +28,7 @@ const Projects = () => {
   return (
     <div>
       <h3>Projects</h3>
+      <p className="note">Note: these projects are hosted on Heroku, they may take a few seconds to load.</p>
       <div className="project-section">
         {imageSource.map(image => (
           <Individual
