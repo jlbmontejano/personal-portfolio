@@ -6,7 +6,6 @@ import Footer from "./Components/Footer";
 import "./App.css";
 
 const App = () => {
-
   return (
     <div className="App">
       <Navigation />
@@ -15,6 +14,19 @@ const App = () => {
         <AboutMe />
         <Projects />
       </div>
+      <p>
+        You can download my resume
+        <a
+          href={"/jlbm-cv.pdf"}
+          download="Jorge Luis Buenrostro Montejano CV"
+          target="_blank"
+          rel="noreferrer"
+          className="resume"
+        >
+          here
+        </a>
+        .
+      </p>
       <Footer />
     </div>
   );

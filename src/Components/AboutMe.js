@@ -14,7 +14,7 @@ const AboutMe = () => {
       </p>
       <div className="image">
         <img
-          src={process.env.PUBLIC_URL + "images/my-photo.jpg"}
+          src={`${process.env.PUBLIC_URL}/images/my-photo.jpg`}
           alt="myself"
         />
         <div>

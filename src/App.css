@@ -8,13 +8,14 @@
   position: sticky;
   top: 0;
   z-index: 1;
+  color: var(--clr-light);
 }
 
 .navigation,
 .footer {
   display: flex;
   justify-content: space-evenly;
-  color: var(--clr-light);
+
   background-color: var(--clr-accent);
 }
 
@@ -48,13 +49,26 @@ a {
   color: var(--clr-light);
 }
 
+.resume {
+  text-decoration: underline;
+  color: var(--clr-dark)
+}
+
 .footer {
-  margin-top: auto;
+  padding: 1em;
+  height: 4em;
+}
+
+.logo {
+  width: 35px;
 }
 
 @media (min-width: 700px) {
   .main-body {
     width: 80%;
+  }
+  .logo {
+    width: 40px;
   }
 }
 

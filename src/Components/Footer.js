@@ -8,22 +8,22 @@ const Footer = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <span>GitHub</span>
+        <img
+          src={process.env.PUBLIC_URL + "/images/github.svg"}
+          alt="github-logo"
+          className="logo"
+        />
       </a>
       <a
         href="https://www.linkedin.com/in/jlbmontejano/"
         target="_blank"
         rel="noreferrer"
       >
-        <span>LinkedIn</span>
-      </a>
-      <a
-        href={"/jlbm-cv.pdf"}
-        download="Jorge Luis Buenrostro Montejano CV"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <span>Resume</span>
+               <img
+          src={process.env.PUBLIC_URL + "/images/linkedin.svg"}
+          alt="github-logo"
+          className="logo"
+        />
       </a>
     </div>
   );
