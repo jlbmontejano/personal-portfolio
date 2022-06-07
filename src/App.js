@@ -1,7 +1,7 @@
 import Home from "./Components/Home";
 import Navigation from "./Components/Navigation";
 import AboutMe from "./Components/AboutMe";
-import Projects from "./Components/Projects";
+import ProjectSection from "./Components/ProjectSection";
 import Footer from "./Components/Footer";
 import "./App.css";
 
@@ -12,7 +12,7 @@ const App = () => {
       <Home />
       <div className="main-body">
         <AboutMe />
-        <Projects />
+        <ProjectSection />
       </div>
       <Footer />
     </div>

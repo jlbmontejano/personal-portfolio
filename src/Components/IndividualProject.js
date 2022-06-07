@@ -1,7 +1,7 @@
 import React from "react";
-import "./Individual.css";
+import "./IndividualProject.css";
 
-const Individual = ({ image, description, link }) => {
+const IndividualProject = ({ image, description, link }) => {
   return (
     <div className="individualCard">
       <a href={link} target="_blank" rel="noreferrer">
@@ -12,4 +12,4 @@ const Individual = ({ image, description, link }) => {
   );
 };
 
-export default Individual;
+export default IndividualProject;

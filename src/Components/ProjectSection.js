@@ -1,8 +1,8 @@
 import React from "react";
-import Individual from "./Individual";
-import "./Project-Section.css";
+import IndividualProject from "./IndividualProject";
+import "./ProjectSection.css";
 
-const Projects = () => {
+const ProjectSection = () => {
   const AdviceGenerator = {
     src: `${process.env.PUBLIC_URL}/images/advice-generator.jpg`,
     description:
@@ -28,10 +28,13 @@ const Projects = () => {
   return (
     <div>
       <h3>Projects</h3>
-      <p className="note">Note: these projects are hosted on Heroku, they may take a few seconds to load.</p>
+      <p className="note">
+        Note: these projects are hosted on Heroku, they may take a few seconds
+        to load.
+      </p>
       <div className="project-section">
         {imageSource.map(image => (
-          <Individual
+          <IndividualProject
             image={image.src}
             description={image.description}
             link={image.link}
@@ -43,4 +46,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default ProjectSection;
