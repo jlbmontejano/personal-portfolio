@@ -26,3 +26,20 @@
 .individualCard:hover p {
     color: var(--clr-light);
 }
+
+button {
+    font-family: inherit;
+    font-size: .8em;
+    color: var(--clr-light);
+    background-color: var(--clr-dark);
+    padding: 1em 2em;
+    margin-top: 1em;
+    border-radius: .75em;
+    border: 2px solid var(--clr-dark);
+}
+
+button:hover {
+    cursor: pointer;
+    color: var(--clr-dark);
+    background-color: var(--clr-light);
+}

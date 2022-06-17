@@ -8,6 +8,7 @@ const ProjectSection = () => {
     description:
       "Small project that fetches an advice from an API every time the button is pressed.",
     link: "https://jlbm-advice-generator.herokuapp.com/",
+    code: "https://github.com/jlbmontejano/advice-generator-app",
     key: 0,
   };
   const Robofriends = {
@@ -15,6 +16,7 @@ const ProjectSection = () => {
     description:
       "Displays all your robofriends from an API, you can then filter your search through the search box.",
     link: "https://jlbm-robofriends.herokuapp.com/",
+    code: "https://github.com/jlbmontejano/robofriends",
     key: 1,
   };
   const FaceRecognition = {
@@ -22,6 +24,7 @@ const ProjectSection = () => {
     description:
       "Full stack project: you can register, sign in, sign out and upload a photo for an API to identify the faces within it.",
     link: "https://face-rec-pro.herokuapp.com/",
+    code: "https://github.com/jlbmontejano/faceRecognitionFrontEnd",
     key: 2,
   };
   const imageSource = [FaceRecognition, Robofriends, AdviceGenerator];
@@ -38,6 +41,7 @@ const ProjectSection = () => {
             image={image.src}
             description={image.description}
             link={image.link}
+            code={image.code}
             key={image.key}
           />
         ))}
