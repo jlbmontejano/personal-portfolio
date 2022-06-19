@@ -22,7 +22,7 @@ const AboutMe = () => {
         </div>
         <div>
 
-          <div className="technologies-list">
+          <div className="languages-list">
             <h4>Languages: </h4>
             <p>HTML, CSS, JavaScript</p>
             <p>Python</p>
