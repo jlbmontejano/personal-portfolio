@@ -4,40 +4,42 @@ import "./ProjectSection.css";
 
 const ProjectSection = () => {
   const AdviceGenerator = {
-    src: `${process.env.PUBLIC_URL}/images/advice-generator.jpg`,
-    description:
-      "Small project that fetches an advice from an API every time the button is pressed.",
-    link: "https://jlbm-advice-generator.herokuapp.com/",
+    title: "Advice Generator",
+    src: `${process.env.PUBLIC_URL}/images/advice-generator.png`,
+    description: "Small project that fetches an advice from an API.",
+    link: "https://shimmering-bunny-4c923a.netlify.app/",
     code: "https://github.com/jlbmontejano/advice-generator-app",
     key: 0,
   };
-  const Robofriends = {
-    src: `${process.env.PUBLIC_URL}/images/robofriends.png`,
-    description:
-      "Displays all your robofriends from an API, you can then filter your search through the search box.",
-    link: "https://jlbm-robofriends.herokuapp.com/",
-    code: "https://github.com/jlbmontejano/robofriends",
+  const RockPaperScissors = {
+    title: "Rock Paper Scissors",
+    src: `${process.env.PUBLIC_URL}/images/rock-paper-scissors.png`,
+    description: "Classic rock, paper, scissors game made with React.",
+    link: "https://steady-biscochitos-582e33.netlify.app/",
+    code: "https://github.com/jlbmontejano/rock-paper-scissors",
     key: 1,
   };
-  const FaceRecognition = {
-    src: `${process.env.PUBLIC_URL}/images/face-recognition.png`,
+  const PokemonApi = {
+    title: "Pokemon-API",
+    src: `${process.env.PUBLIC_URL}/images/pokemon-api.png`,
     description:
-      "Full stack project: you can register, sign in, sign out and upload a photo for an API to identify the faces within it.",
-    link: "https://face-rec-pro.herokuapp.com/",
-    code: "https://github.com/jlbmontejano/faceRecognitionFrontEnd",
+      "Webapp that uses the pokeapi to display different information",
+    link: "https://relaxed-frangipane-1bb52e.netlify.app/",
+    code: "https://github.com/jlbmontejano/pokemon-api",
     key: 2,
   };
-  const imageSource = [FaceRecognition, Robofriends, AdviceGenerator];
+  const imageSource = [PokemonApi, RockPaperScissors, AdviceGenerator];
   return (
     <div>
       <h3>Projects</h3>
-      <p className="note">
-        Note: these projects are hosted on Heroku, they may take a few seconds
-        to load.
+      <p>
+        These are some of my projects. I am currently working on the pokemon-api
+        project.
       </p>
       <div className="project-section">
         {imageSource.map(image => (
           <IndividualProject
+            title={image.title}
             image={image.src}
             description={image.description}
             link={image.link}

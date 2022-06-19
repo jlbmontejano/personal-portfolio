@@ -2,13 +2,12 @@
     border: 2px solid var(--clr-dark);
     transition: all .3s ease-in-out;
     font-size: inherit;
-    border-radius: 15px;
     max-width: 425px;
+    margin: .75em 0;
 }
 
 .individualCard img {
     width: 100%;
-    border-radius: 13px 13px 0 0;
 }
 
 .individualCard p {
@@ -32,9 +31,7 @@ button {
     font-size: .8em;
     color: var(--clr-light);
     background-color: var(--clr-dark);
-    padding: 1em 2em;
-    margin-top: 1em;
-    border-radius: .75em;
+    padding: .75em 1.75em;
     border: 2px solid var(--clr-dark);
 }
 
