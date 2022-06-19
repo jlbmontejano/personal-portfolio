@@ -12,7 +12,7 @@ const IndividualProject = ({ title, image, description, link, code }) => {
         </a>
       </div>
       <a href={code} target="_blank" rel="noreferrer">
-        <button>CODE</button>{" "}
+        <button className="code-button">CODE</button>{" "}
       </a>
     </div>
   );

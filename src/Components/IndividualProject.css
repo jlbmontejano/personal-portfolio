@@ -26,7 +26,7 @@
     color: var(--clr-light);
 }
 
-button {
+.code-button {
     font-family: inherit;
     font-size: .8em;
     color: var(--clr-light);
@@ -35,8 +35,12 @@ button {
     border: 2px solid var(--clr-dark);
 }
 
-button:hover {
+.code-button:hover {
     cursor: pointer;
     color: var(--clr-dark);
     background-color: var(--clr-light);
+}
+
+.code-button:active {
+    transform: scale(.9);
 }

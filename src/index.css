@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --clr-dark: #000000;
+  --clr-light: #FFFFFF;
+  --clr-accent: #2EAF7D;
+}
+
 html,
 body {
   margin: 0;
@@ -11,29 +17,19 @@ body {
 }
 
 body {
+  text-align: center;
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   color: var(--clr-dark);
   background-color: var(--clr-light);
 }
 
-:root {
-  --clr-dark: #000000;
-  --clr-light: #FFFFFF;
-  --clr-accent: #2EAF7D;
-
-  --typewriterSpeed: 4.5s;
-}
-
 h1 {
-  display: inline;
   font-size: 2.25em;
-  position: relative;
 }
 
 h2 {
   font-size: 1.55em;
-  margin-top: 0;
 }
 
 h3 {
@@ -42,8 +38,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.15em;
-  margin: 0;
+  font-size: 1.1em;
 }
 
 hr {
@@ -52,6 +47,13 @@ hr {
   border: none;
   height: 3px;
   width: 80%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
 }
 
 @media (min-width: 700px) {

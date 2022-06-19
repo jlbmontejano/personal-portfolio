@@ -1,27 +1,5 @@
 .App {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.navigation {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  color: var(--clr-light);
-}
-
-.navigation,
-.footer {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: var(--clr-accent);
-}
-
-.navigation span:hover {
-  cursor: pointer;
-  color: var(--clr-dark);
-  text-decoration: underline;
+  display: grid;
 }
 
 .main-body {
@@ -34,47 +12,17 @@ img {
   max-width: 720px;
 }
 
-ul {
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
 a {
   text-decoration: none;
   color: var(--clr-light);
 }
 
-.footer {
-  padding: .5em;
-  height: 3.25em;
-}
-
-.logo {
-  width: 35px;
-}
-
-.logo:hover {
+button:hover {
   cursor: pointer;
-  transform: scale(1.05);
 }
 
 @media (min-width: 700px) {
   .main-body {
     width: 80%;
-  }
-
-  .logo {
-    width: 40px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .image {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
   }
 }

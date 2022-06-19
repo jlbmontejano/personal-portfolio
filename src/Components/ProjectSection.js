@@ -33,8 +33,7 @@ const ProjectSection = () => {
     <div>
       <h3>Projects</h3>
       <p>
-        These are some of my projects. I am currently working on the pokemon-api
-        project.
+        These are some of the projects I've worked on so far. I am constantly updating and improving them.
       </p>
       <div className="project-section">
         {imageSource.map(image => (

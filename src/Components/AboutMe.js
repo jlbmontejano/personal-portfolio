@@ -1,4 +1,5 @@
 import React from "react";
+import "./AboutMe.css";
 
 const AboutMe = () => {
   return (
@@ -12,26 +13,30 @@ const AboutMe = () => {
         afraid to try new things out; to me, information and time are two of the
         most invaluable things in life.
       </p>
-      <div className="image">
-        <img
-          src={`${process.env.PUBLIC_URL}/images/my-photo.jpg`}
-          alt="myself"
-        />
+      <div className="image-technologies">
         <div>
-          <h4>Languages: </h4>
-          <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Python</li>
-            <li>SQL</li>
-          </ul>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/my-photo.jpg`}
+            alt="myself"
+          />
+        </div>
+        <div>
 
-          <h4>Technologies: </h4>
-          <ul>
-            <li>ReactJS</li>
-            <li>NodeJS</li>
-            <li>PostgreSQL</li>
-            <li>GIT</li>
-          </ul>
+          <div className="technologies-list">
+            <h4>Languages: </h4>
+            <p>HTML, CSS, JavaScript</p>
+            <p>Python</p>
+            <p>SQL</p>
+          </div>
+
+          <div className="technologies-list">
+            <h4>Technologies: </h4>
+            <p>ReactJS</p>
+            <p>NodeJS</p>
+            <p>PostgreSQL</p>
+            <p>GIT</p>
+          </div>
+
         </div>
       </div>
       <hr id="projects" style={{ visibility: "hidden" }} />

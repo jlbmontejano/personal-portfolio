@@ -1,0 +1,22 @@
+.image-technologies {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.languages-list,
+.technologies-list {
+    margin: 2em 0;
+}
+
+.languages-list p,
+.technologies-list p {
+    margin: .25em 0;
+}
+
+@media (min-width: 1200px) {
+    .image-technologies {
+        grid-template-rows: none;
+        grid-template-columns: 1fr 1fr;
+    }
+}

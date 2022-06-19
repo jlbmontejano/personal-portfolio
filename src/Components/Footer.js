@@ -1,4 +1,5 @@
 import React from "react";
+import "./Navigation-Footer.css";
 
 const Footer = () => {
   return (
@@ -8,22 +9,14 @@ const Footer = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img
-          src={process.env.PUBLIC_URL + "/images/github.svg"}
-          alt="github-logo"
-          className="logo"
-        />
+        <span>GitHub</span>
       </a>
       <a
         href="https://www.linkedin.com/in/jlbmontejano/"
         target="_blank"
         rel="noreferrer"
       >
-               <img
-          src={process.env.PUBLIC_URL + "/images/linkedin.svg"}
-          alt="github-logo"
-          className="logo"
-        />
+        <span>LinkedIn</span>
       </a>
     </div>
   );

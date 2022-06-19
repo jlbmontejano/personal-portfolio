@@ -1,0 +1,32 @@
+.navigation,
+.footer {
+    display: grid;
+    align-items: center;
+    background-color: var(--clr-accent);
+}
+
+.navigation {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    color: var(--clr-light);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer {
+    grid-template-columns: 1fr 1fr;
+}
+
+.navigation span:hover,
+.footer span:hover {
+    cursor: pointer;
+    color: var(--clr-dark);
+    text-decoration: underline;
+}
+
+
+@media (min-width: 700px) {
+    .logo {
+        width: 40px;
+    }
+}

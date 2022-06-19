@@ -1,4 +1,3 @@
-import Home from "./Components/Home";
 import Navigation from "./Components/Navigation";
 import AboutMe from "./Components/AboutMe";
 import ProjectSection from "./Components/ProjectSection";
@@ -9,7 +8,9 @@ const App = () => {
   return (
     <div className="App" id="home">
       <Navigation />
-      <Home />
+      <h1>Jorge Buenrostro</h1>
+      <h2>Frontend Developer</h2>
+      <hr id="about-me" />
       <div className="main-body">
         <AboutMe />
         <ProjectSection />
