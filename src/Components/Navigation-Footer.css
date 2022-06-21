@@ -23,10 +23,3 @@
     color: var(--clr-dark);
     text-decoration: underline;
 }
-
-
-@media (min-width: 700px) {
-    .logo {
-        width: 40px;
-    }
-}

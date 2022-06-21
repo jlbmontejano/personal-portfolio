@@ -5,14 +5,14 @@ const IndividualProject = ({ title, image, description, link, code }) => {
   return (
     <div>
       <h4>{title}</h4>
-      <div className="individualCard">
-        <a href={link} target="_blank" rel="noreferrer">
+      <a href={link} target="_blank" rel="noreferrer">
+        <div className="individualCard">
           <img src={image} alt="one-project" />
           <p className="description">{description}</p>
-        </a>
-      </div>
+        </div>
+      </a>
       <a href={code} target="_blank" rel="noreferrer">
-        <button className="code-button">CODE</button>{" "}
+        <button className="code-button">CODE</button>
       </a>
     </div>
   );
