@@ -1,0 +1,57 @@
+.loading-screen {
+    display: grid;
+    height: 100vh;
+    background-color: var(--clr-accent);
+}
+
+.rectangle-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    margin: 0 auto;
+    gap: .75em;
+}
+
+.rectangle {
+    height: 160px;
+    width: 40px;
+    background: white;
+    animation-duration: 1.25s;
+    animation-iteration-count: infinite;
+}
+
+.odd {
+    animation-name: changeSizeOdd;
+}
+
+.even {
+    animation-name: changeSizeEven;
+}
+
+@keyframes changeSizeOdd {
+    0% {
+        transform: scale(.5);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(.5);
+    }
+}
+
+@keyframes changeSizeEven {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
