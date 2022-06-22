@@ -4,6 +4,7 @@
     transition: all .3s ease-in-out;
     font-size: inherit;   
     max-width: 95%;
+    min-height: 85%;
     padding: 1em;
     margin: 1em auto;
 }

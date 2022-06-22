@@ -6,8 +6,7 @@ const ProjectSection = () => {
   const PokemonApi = {
     title: "Pokemon-API",
     src: `${process.env.PUBLIC_URL}/images/pokemon-api.png`,
-    description:
-      "Webapp that uses the pokeapi to display pokemon information.",
+    description: "Webapp that uses the pokeapi to display pokemon information.",
     link: "https://relaxed-frangipane-1bb52e.netlify.app/",
     code: "https://github.com/jlbmontejano/pokemon-api",
     key: 0,
@@ -44,11 +43,11 @@ const ProjectSection = () => {
             image={project.src}
             description={project.description}
             link={project.link}
-            code={project.code}
             key={project.key}
           />
         ))}
       </div>
+
     </div>
   );
 };
