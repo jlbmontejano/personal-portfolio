@@ -13,11 +13,18 @@
 }
 
 .rectangle {
-    height: 160px;
-    width: 40px;
+    height: 110px;
+    width: 30px;
     background: white;
     animation-duration: 1.25s;
     animation-iteration-count: infinite;
+}
+
+@media (min-width: 1200px) {
+    .rectangle {
+        height: 160px;
+        width: 40px;
+    }
 }
 
 .odd {
