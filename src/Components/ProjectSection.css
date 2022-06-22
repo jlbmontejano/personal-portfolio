@@ -1,16 +1,15 @@
-.project-section,
-.button-section {
+.project-section {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     margin: 1.5em 0;
     justify-items: center;
-    gap: 1em;
+    gap: 4em;
 }
 
 @media (min-width: 1200px) {
-    .project-section,
-    .button-section {
+    .project-section {
         grid-template-rows: none;
         grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
     }
 }

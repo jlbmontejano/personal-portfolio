@@ -47,13 +47,7 @@ const ProjectSection = () => {
           />
         ))}
       </div>
-      <div className="button-section">
-        {projectList.map(project => (
-          <a href={project.code} target="_blank" rel="noreferrer">
-            <button className="code-button">CODE</button>
-          </a>
-        ))}
-      </div>
+
     </div>
   );
 };
