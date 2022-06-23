@@ -10,7 +10,7 @@ const AboutMe = () => {
         career change to software engineering and development. I am self-taught
         and have always been interested in all types of logic and math related
         topics. I am a curious and passionate individual by nature that is never
-        afraid to try new things out; to me, information and time are two of the
+        afraid to try new things out; for me, information and time are two of the
         most invaluable things in life.
       </p>
       <div className="image-technologies">
