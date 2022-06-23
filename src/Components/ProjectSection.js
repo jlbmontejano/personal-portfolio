@@ -43,11 +43,11 @@ const ProjectSection = () => {
             image={project.src}
             description={project.description}
             link={project.link}
+            code={project.code}
             key={project.key}
           />
         ))}
       </div>
-
     </div>
   );
 };
