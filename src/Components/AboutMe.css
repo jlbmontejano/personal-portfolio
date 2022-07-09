@@ -19,6 +19,10 @@ img {
     margin: .25em 0;
 }
 
+#projects {
+    margin-bottom: 20px;
+}
+
 @media (min-width: 1200px) {
     .image-technologies {
         grid-template-rows: none;
