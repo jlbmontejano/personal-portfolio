@@ -39,7 +39,7 @@ const AboutMe = () => {
 
         </div>
       </div>
-      <hr id="projects" style={{ visibility: "hidden" }} />
+      <hr id="projects" />
     </div>
   );
 };
