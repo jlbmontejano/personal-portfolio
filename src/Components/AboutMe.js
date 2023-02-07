@@ -27,14 +27,15 @@ const AboutMe = () => {
             <p>HTML, CSS, JavaScript</p>
             <p>Python</p>
             <p>SQL</p>
+            <p>Swift</p>
           </div>
 
           <div className="technologies-list">
             <h4>Technologies: </h4>
             <p>ReactJS</p>
-            <p>NodeJS</p>
             <p>PostgreSQL</p>
             <p>GIT</p>
+            <p>SwiftUI</p>
           </div>
 
         </div>
