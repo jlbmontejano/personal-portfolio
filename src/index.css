@@ -61,7 +61,7 @@
 
   .header>a,
   .footer>a {
-    @apply text-sm md:text-xl xl:text-2xl
+    @apply text-sm md:text-xl 
   }
 
   .work-accordion {
