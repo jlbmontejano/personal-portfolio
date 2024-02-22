@@ -18,8 +18,8 @@ const IndividualWork = ({ work }: IndividualWorkProps) => {
 	return (
 		<div className='flex flex-col w-full lg:w-1/3 text-white'>
 			<div onClick={() => setHidden(!hidden)} className={`flex justify-between p-5 cursor-pointer ${hidden ? "bg-emerald-green" : "bg-dark-emerald-green text-cream "}`}>
-				<h4 className={`text-left ${hidden ? "" : "underline"}`}>{work.company}</h4>
-				<h4>+</h4>
+				<h5 className={`text-left ${hidden ? "" : "underline"}`}>{work.company}</h5>
+				<h5>+</h5>
 			</div>
 			<div className={`flex flex-col p-5 bg-emerald-green ${hidden && "hidden"}`}>
 				<p className='text-left'>

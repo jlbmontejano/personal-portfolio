@@ -27,6 +27,10 @@
     @apply text-3xl
   }
 
+  h5 {
+    @apply text-2xl
+  }
+
   a:hover {
     @apply text-charcoal-gray underline cursor-pointer
   }

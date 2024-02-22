@@ -8,7 +8,7 @@ const Footer = () => {
 					{network.name}
 				</a>
 			))}
-			<a href='/assets/CV-Jorge-Luis-Buenrostro-Montejano.pdf' target='_blank' rel='noreferrer'>
+			<a href='assets/CV-Jorge-Luis-Buenrostro-Montejano.pdf' target='_blank' rel='noreferrer'>
 				Resume
 			</a>
 		</div>
