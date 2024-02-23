@@ -1,7 +1,7 @@
 export const headerOptions = [
 	{ name: "ABOUT ME", scrollTo: "about-me" },
 	{ name: "WORK EXPERIENCE", scrollTo: "work-experience" },
-	{ name: "PROJECTS", scrollTo: "projects" },
+	// { name: "PROJECTS", scrollTo: "projects" },
 	{ name: "EDUCATION", scrollTo: "education" },
 ];
 
