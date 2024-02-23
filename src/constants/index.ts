@@ -17,7 +17,7 @@ export const WORK_EXPERIENCE = [
 		fromDate: "October 2023",
 		toDate: "Present",
 		technologies: "Typescript, ReactJS, React Query, TailwindCSS",
-		tasks: ["Leading the front-end development of a web application designed to transform how coaches manage and analyze sports teams, focusing on intuitive design and seamless user experience.", "•	Collaborated closely with the back-end team to ensure robust and seamless integration of APIs, optimizing data flow and user interaction."],
+		tasks: ["Leading the front-end development of a web application designed to transform how coaches manage and analyze sports teams, focusing on intuitive design and seamless user experience.", "Collaborated closely with the back-end team to ensure robust and seamless integration of APIs, optimizing data flow and user interaction."],
 	},
 	{
 		company: "IT Nora",
