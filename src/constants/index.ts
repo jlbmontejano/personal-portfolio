@@ -2,7 +2,7 @@ export const headerOptions = [
 	{ name: "ABOUT ME", scrollTo: "about-me" },
 	{ name: "WORK EXPERIENCE", scrollTo: "work-experience" },
 	// { name: "PROJECTS", scrollTo: "projects" },
-	{ name: "EDUCATION", scrollTo: "education" },
+	{ name: "OTHER", scrollTo: "other" },
 ];
 
 export const languages = ["HTML, CSS & JavaScript", "Typescript", "Python", "SQL", "Swift"];

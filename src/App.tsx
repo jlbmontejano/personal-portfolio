@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import AboutMe from "./sections/AboutMe";
 import WorkExperience from "./sections/WorkExperience";
 // import Projects from "./sections/Projects";
-import Education from "./sections/Education";
+import Other from "./sections/Other";
 
 const App = () => {
 	return (
@@ -12,7 +12,7 @@ const App = () => {
 			<AboutMe />
 			<WorkExperience />
 			{/* <Projects /> */}
-			<Education />
+			<Other />
 			<Footer />
 		</div>
 	);
