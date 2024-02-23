@@ -42,14 +42,14 @@ const IndividualWork = ({ work }: IndividualWorkProps) => {
 							<span className='font-bold'>Technologies: </span>
 							{work.technologies}
 							<br />
-							<ul className='list-disc list-inside px-5'>
-								{work.tasks.map(task => (
-									<li className='text-left' key={task}>
-										{task}
-									</li>
-								))}
-							</ul>
 						</Dialog.Description>
+						<ul className='list-disc list-inside px-5'>
+							{work.tasks.map(task => (
+								<li className='text-left' key={task}>
+									{task}
+								</li>
+							))}
+						</ul>
 						<button onClick={() => setIsOpen(false)} className='mt-5'>
 							Close
 						</button>
