@@ -1,4 +1,4 @@
-import { headerOptions } from "../constants/index";
+import { HEADER_OPTIONS } from "../constants/index";
 
 const Header = () => {
 	const handleClick = (scrollTo: string) => {
@@ -7,8 +7,8 @@ const Header = () => {
 
 	return (
 		<div className='header sticky top-0'>
-			{headerOptions.map(option => (
-				<a onClick={() => handleClick(option.scrollTo)} key={`${option.name}`}>
+			{HEADER_OPTIONS.map(option => (
+				<a onClick={() => handleClick(option.scrollTo)} key={option.name}>
 					{option.name}
 				</a>
 			))}

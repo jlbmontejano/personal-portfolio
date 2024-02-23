@@ -1,5 +1,5 @@
 import IndividualWork from "../components/IndividualWork";
-import { workExperience } from "../constants";
+import { WORK_EXPERIENCE } from "../constants";
 
 const WorkExperience = () => {
 	return (
@@ -7,7 +7,7 @@ const WorkExperience = () => {
 			<hr id='work-experience' />
 			<h3 className='py-7'>Work Experience</h3>
 			<div className='flex flex-col gap-7 lg:flex-row'>
-				{workExperience.map((work, workIdx) => (
+				{WORK_EXPERIENCE.map((work, workIdx) => (
 					<IndividualWork work={work} key={workIdx} />
 				))}
 			</div>

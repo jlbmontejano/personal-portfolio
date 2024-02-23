@@ -43,7 +43,7 @@ const IndividualWork = ({ work }: IndividualWorkProps) => {
 							{work.technologies}
 							<br />
 						</Dialog.Description>
-						<ul className='list-disc list-inside px-5'>
+						<ul className='list-disc px-5'>
 							{work.tasks.map(task => (
 								<li className='text-left' key={task}>
 									{task}

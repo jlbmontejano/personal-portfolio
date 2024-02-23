@@ -1,15 +1,15 @@
-export const headerOptions = [
+export const HEADER_OPTIONS = [
 	{ name: "ABOUT ME", scrollTo: "about-me" },
 	{ name: "WORK EXPERIENCE", scrollTo: "work-experience" },
 	// { name: "PROJECTS", scrollTo: "projects" },
 	{ name: "OTHER", scrollTo: "other" },
 ];
 
-export const languages = ["HTML, CSS & JavaScript", "Typescript", "Python", "SQL", "Swift"];
+export const LANGUAGES = ["HTML, CSS & JavaScript", "Typescript", "Python", "SQL", "Swift"];
 
-export const technologies = ["ReactJS", "Vue", "NodeJS", "Express", "GIT"];
+export const TECHNOLOGIES = ["ReactJS", "Vue", "NodeJS", "Express", "GIT"];
 
-export const workExperience = [
+export const WORK_EXPERIENCE = [
 	{
 		company: "Sportsminers",
 		position: "Front End Developer",
@@ -17,7 +17,7 @@ export const workExperience = [
 		fromDate: "October 2023",
 		toDate: "Present",
 		technologies: "Typescript, ReactJS, React Query, TailwindCSS",
-		tasks: ["Freelance project that is currently being developed.", "Webapp that allows coaches to better manage their sports teams by showcasing valuable information and statistics about each player."],
+		tasks: ["Leading the front-end development of a web application designed to transform how coaches manage and analyze sports teams, focusing on intuitive design and seamless user experience.", "Spearheaded the development of a dynamic web application that enhances team management through comprehensive player statistics and insights, significantly improving coaching strategies."],
 	},
 	{
 		company: "IT Nora",
@@ -25,8 +25,8 @@ export const workExperience = [
 		location: "Mexicali, MX",
 		fromDate: "March 2022",
 		toDate: "October 2023",
-		technologies: "Typescript, Vue, NodeJS, Google Firebase",
-		tasks: ["Main developer of the company’s website: www.itnora.com.", "Created components for a government app which required a vast number of forms and validation.", "Engineered and implemented new components to add and filter results from a client’s database.", "Enhanced core functionalities within a client's social media application, such as post creation, photo editing within posts, and user-initiated modifications to their own profile.", "Identified and rectified multiple technical issues within a client's website, contributing significantly to improved performance and user experience."],
+		technologies: "Typescript, Vue, Node.js, Google Firebase",
+		tasks: ["Led the development of IT Nora's official website, enhancing the company’s online presence and client engagement through a modern, responsive design.", "Engineered a comprehensive solution for a government application, incorporating extensive forms and validation mechanisms to streamline data collection and processing.", "Developed and implemented advanced features for a social media application, including post creation, in-post photo editing, and dynamic user profile updates, significantly enhancing user interaction and satisfaction.", "Diagnosed and resolved critical technical issues across various projects, leading to marked improvements in performance and user experience."],
 	},
 	{
 		company: "Huard Technology Services",
@@ -35,11 +35,11 @@ export const workExperience = [
 		fromDate: "August 2021",
 		toDate: "March 2022",
 		technologies: "Swift",
-		tasks: ["Contract-based job, responsible of creating, maintaining, and deploying an iOS app according to the client’s needs.", "The app consisted of establishing communication between an iOS device and snow-making machines. This integration enabled the exchange of information and allowed for direct control of the machine's motor via the iOS device, enhancing operational efficiency and control."],
+		tasks: ["Contract-based job, responsible of creating, maintaining and deploying an iOS app according to the client’s needs.", "Successfully delivered an application that facilitates real-time communication between iOS devices and snow-making machines, enabling efficient operational management and data exchange.", "Demonstrated exceptional problem-solving skills in developing a user-friendly interface and ensuring seamless device integration, contributing to the operational efficiency of snow-making operations."],
 	},
 ];
 
-export const projects = [
+export const PROJECTS = [
 	{
 		title: "Pokemon-API",
 		image: "assets/pokemon-api.png",
@@ -63,7 +63,7 @@ export const projects = [
 	},
 ];
 
-export const socialNetworks = [
+export const SOCIAL_NETWORKS = [
 	{ name: "GitHub", link: "https://github.com/jlbmontejano" },
 	{ name: "LinkedIn", link: "https://www.linkedin.com/in/jlbmontejano/" },
 ];

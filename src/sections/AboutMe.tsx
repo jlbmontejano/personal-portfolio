@@ -1,4 +1,4 @@
-import { languages, technologies } from "../constants";
+import { LANGUAGES, TECHNOLOGIES } from "../constants";
 
 const AboutMe = () => {
 	return (
@@ -15,7 +15,7 @@ const AboutMe = () => {
 					<div className='flex flex-col'>
 						<h5>Programming Languages: </h5>
 						<ul>
-							{languages.map(language => (
+							{LANGUAGES.map(language => (
 								<li key={`${language}`}>{language}</li>
 							))}
 						</ul>
@@ -23,7 +23,7 @@ const AboutMe = () => {
 					<div className='flex flex-col'>
 						<h5>Technologies: </h5>
 						<ul>
-							{technologies.map(technology => (
+							{TECHNOLOGIES.map(technology => (
 								<li key={`${technology}`}>{technology}</li>
 							))}
 						</ul>
