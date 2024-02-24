@@ -15,7 +15,8 @@ const Education = () => {
 				<p> Mexicali, Mexico</p>
 			</div>
 			<div>
-				<p className='font-bold'>Bachelor's Degree in Music</p>
+				<p className='font-bold'>Education:</p>
+				<p>Bachelor's Degree in Music</p>
 				<p>Centro Universitario de Estudios Musicales</p>
 				<p>Queretaro, MX; 2015 - 2019</p>
 			</div>
