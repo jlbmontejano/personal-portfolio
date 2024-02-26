@@ -35,7 +35,7 @@ export const WORK_EXPERIENCE = [
 		fromDate: "August 2021",
 		toDate: "March 2022",
 		technologies: "Swift",
-		tasks: ["Contract-based job, responsible of creating, maintaining and deploying an iOS app according to the client’s needs.", "Successfully delivered an application that facilitates real-time communication between iOS devices and snow-making machines, enabling efficient operational management and data exchange.", "Demonstrated exceptional problem-solving skills in developing a user-friendly interface and ensuring seamless device integration, contributing to the operational efficiency of snow-making operations."],
+		tasks: ["Contract-based job, responsible of creating, maintaining and deploying iOS apps according to the client’s needs.", "Successfully delivered an application that facilitates real-time communication between iOS devices and snow-making machines, enabling efficient operational management and data exchange.", "Demonstrated exceptional problem-solving skills in developing a user-friendly interface and ensuring seamless device integration, contributing to the operational efficiency of snow-making operations."],
 	},
 ];
 
