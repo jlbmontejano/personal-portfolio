@@ -20,9 +20,8 @@ const IndividualWork = ({ work }: IndividualWorkProps) => {
 	return (
 		<>
 			<div className='flex flex-col w-full lg:w-1/3 text-white'>
-				<div onClick={() => setIsOpen(true)} className='flex justify-between p-5 cursor-pointer bg-emerald-green'>
-					<h5 className='text-left'>{work.company}</h5>
-					<h5>+</h5>
+				<div onClick={() => setIsOpen(true)} className='p-5 cursor-pointer bg-emerald-green hover:text-cream hover:bg-dark-emerald-green'>
+					<h5>{work.company}</h5>
 				</div>
 			</div>
 			<Transition show={isOpen} as={Fragment}>
