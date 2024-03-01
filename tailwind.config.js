@@ -15,6 +15,15 @@ export default {
 			scale: {
 				102: "1.02",
 			},
+			keyframes: {
+				fadeRight: {
+					"0%": { opacity: "0", transform: "translateX(-12%)" },
+					"100%": { opacity: "1", transform: "translateX(0)" },
+				},
+			},
+			animation: {
+				fadeRight: "fadeRight 1.5s ease-out forwards",
+			},
 		},
 	},
 	plugins: [],

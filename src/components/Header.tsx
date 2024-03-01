@@ -6,7 +6,7 @@ const Header = () => {
 	};
 
 	return (
-		<div className='header sticky top-0'>
+		<div className='header sticky top-0 z-50'>
 			{HEADER_OPTIONS.map(option => (
 				<a onClick={() => handleClick(option.scrollTo)} key={option.name}>
 					{option.name}
