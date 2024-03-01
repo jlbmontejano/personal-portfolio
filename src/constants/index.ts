@@ -1,4 +1,5 @@
 export const HEADER_OPTIONS = [
+	{ name: "HOME", scrollTo: "home" },
 	{ name: "ABOUT ME", scrollTo: "about-me" },
 	{ name: "WORK EXPERIENCE", scrollTo: "work-experience" },
 	// { name: "PROJECTS", scrollTo: "projects" },

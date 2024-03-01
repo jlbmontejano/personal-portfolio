@@ -2,57 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-size: 20px;
+  text-align: center;
+}
+
 @layer base {
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    @apply font-bold
-  }
-
   h1 {
-    @apply text-2xl lg:text-6xl
+    @apply text-3xl lg:text-6xl
   }
 
   h2 {
-    @apply text-3xl lg:text-5xl
+    @apply text-2xl lg:text-5xl
   }
 
   h3 {
-    @apply text-2xl lg:text-4xl
+    @apply text-xl lg:text-4xl font-bold
   }
 
   h4 {
-    @apply text-xl lg:text-3xl
+    @apply text-lg lg:text-3xl
   }
 
   h5 {
-    @apply text-lg lg:text-2xl
-  }
-
-  a:hover {
-    @apply text-charcoal-gray underline cursor-pointer
+    @apply text-base lg:text-2xl
   }
 
   button {
-    @apply text-white bg-emerald-green rounded py-2 px-4
-  }
-
-  button:hover {
-    @apply text-charcoal-gray underline
-  }
-
-  * {
-    @apply text-center
+    @apply text-white bg-emerald-green rounded
   }
 }
 
 @layer components {
+  .main-content {
+    @apply px-5
+  }
 
   .section-container {
-    @apply flex flex-col gap-7 p-5
+    @apply flex flex-col gap-7 w-full
+  }
+
+  .scroll-anchor {
+    @apply pb-10
   }
 
   .header,
@@ -62,10 +53,20 @@
 
   .header>a,
   .footer>a {
-    @apply text-sm md:text-xl
+    @apply text-xs md:text-xl
   }
 
-  .work-accordion {
-    @apply
+  .work-projects-section {
+    @apply w-full flex flex-col gap-7 lg:flex-row
+  }
+}
+
+@layer utilities {
+  a:hover {
+    @apply text-charcoal-gray underline cursor-pointer
+  }
+
+  button:hover {
+    @apply hover:bg-dark-emerald-green text-cream underline
   }
 }

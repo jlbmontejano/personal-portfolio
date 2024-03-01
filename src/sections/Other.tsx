@@ -1,8 +1,8 @@
 const Education = () => {
 	return (
 		<div className='section-container'>
-			<hr id='other' />
-			<h3 className='py-7'>Other</h3>
+			<div id='other' className='scroll-anchor' />
+			<h3>Other</h3>
 			<div>
 				<p className='font-bold'>Location:</p>
 				<p> Mexicali, Mexico</p>

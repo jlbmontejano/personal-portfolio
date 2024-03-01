@@ -1,18 +1,22 @@
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Home from "./sections/Home";
 import AboutMe from "./sections/AboutMe";
 import WorkExperience from "./sections/WorkExperience";
 // import Projects from "./sections/Projects";
 import Other from "./sections/Other";
+import Footer from "./components/Footer";
 
 const App = () => {
 	return (
 		<div>
 			<Header />
-			<AboutMe />
-			<WorkExperience />
-			{/* <Projects /> */}
-			<Other />
+			<div className='main-content'>
+				<Home />
+				<AboutMe />
+				<WorkExperience />
+				{/* <Projects /> */}
+				<Other />
+			</div>
 			<Footer />
 		</div>
 	);
