@@ -22,6 +22,10 @@ const IndividualWork = ({ work }: IndividualWorkProps) => {
 			<div className='flex flex-col w-full xl:w-1/3 '>
 				<button onClick={() => setIsOpen(true)} className='p-5 overflow-hidden'>
 					<h5 className='text-nowrap text-ellipsis whitespace-nowrap overflow-hidden'>{work.company}</h5>
+					<p className='text-sm text-nowrap text-ellipsis whitespace-nowrap overflow-hidden'>{work.position}</p>
+					<p className='text-xs text-nowrap text-ellipsis whitespace-nowrap overflow-hidden'>
+						{work.fromDate} - {work.toDate}
+					</p>
 				</button>
 			</div>
 			<Transition show={isOpen} as={Fragment}>
