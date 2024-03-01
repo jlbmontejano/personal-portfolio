@@ -1,15 +1,19 @@
+import SocialNetworks from "../components/SocialNetworks";
+
 const Home = () => {
 	return (
-		<div className='section-container gap-0 items-center h-screen justify-center animate-fadeRight'>
+		<div className='section-container mt-0 gap-0 h-screen justify-center animate-fadeRight'>
 			<div id='home' className='scroll-anchor absolute top-0' />
-			<div className='text-left'>
-				<h1 className='italic'>Hi, my name is</h1>
-				<h1 className='font-bold'>Jorge Buenrostro</h1>
+			<div>
+				<h1 className='font-bold text-6xl'>HI,</h1>
+				<h2>
+					my name is <span className='font-bold'>Jorge Buenrostro</span>
+				</h2>
 			</div>
-			<div className='mt-2 '>
-				<h5>I am a Frontend Developer </h5>
-				<h5>from Mexico</h5>
+			<div className='xl:mt-2'>
+				<h4>a Frontend Developer </h4>
 			</div>
+			<SocialNetworks />
 		</div>
 	);
 };

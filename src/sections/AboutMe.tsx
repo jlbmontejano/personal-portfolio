@@ -1,23 +1,18 @@
 import { LANGUAGES, TECHNOLOGIES } from "../constants";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import useAOS from "../customHooks/useAos";
 
 const AboutMe = () => {
-	AOS.init({
-		delay: 100,
-		duration: 800,
-		easing: "ease",
-	});
+	useAOS();
 
 	return (
 		<div>
 			<div id='about-me' className='scroll-anchor' />
-			<div data-aos='fade-up'  className='section-container mt-3'>
+			<div data-aos='fade-up' className='section-container mt-3'>
 				<h3>About Me</h3>
-				<p className='lg:text-left md:px-16'>As a dedicated frontend developer, I specialize in crafting innovative, efficient, and scalable solutions that drive real value. My passion for technology and problem-solving drives me to constantly seek new challenges that expand my skill set and contribute to the success of the projects I'm involved in. I am self-taught and have always been interested in all types of logic and math related topics. I am a curious and passionate individual by nature that is never afraid to try new things out; for me, information and time are two of the most invaluable things in life.</p>
+				<p>As a dedicated frontend developer, I specialize in crafting innovative, efficient, and scalable solutions that drive real value. My passion for technology and problem-solving drives me to constantly seek new challenges that expand my skill set and contribute to the success of the projects I'm involved in. I am self-taught, powered by an endless fascination with logic, math, and the cool puzzles they throw my way. I'm naturally curious and pretty passionate about learning. For me, information and time are super precious, always making sure I'm learning something new or making something worthwhile. In short, I love what I do, and I'm always looking for the next cool project to get my hands on. Let's make something awesome together!</p>
 				<div className='flex flex-col gap-7'>
 					<div>
-						<h5 className='font-bold'>Programming Languages: </h5>
+						<h4 className='font-bold'>Programming Languages: </h4>
 						<ul>
 							{LANGUAGES.map(language => (
 								<li key={`${language}`}>{language}</li>
@@ -25,7 +20,7 @@ const AboutMe = () => {
 						</ul>
 					</div>
 					<div>
-						<h5 className='font-bold'>Technologies: </h5>
+						<h4 className='font-bold'>Technologies: </h4>
 						<ul>
 							{TECHNOLOGIES.map(technology => (
 								<li key={`${technology}`}>{technology}</li>

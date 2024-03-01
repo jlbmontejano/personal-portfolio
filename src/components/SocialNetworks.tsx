@@ -1,8 +1,8 @@
 import { SOCIAL_NETWORKS } from "../constants";
 
-const Footer = () => {
+const SocialNetworks = () => {
 	return (
-		<div className='footer mt-9'>
+		<div className='social-networks'>
 			{SOCIAL_NETWORKS.map(network => (
 				<a href={network.link} target='_blank' rel='noreferrer' key={`jorge-${network.name}`}>
 					{network.name}
@@ -15,4 +15,4 @@ const Footer = () => {
 	);
 };
 
-export default Footer;
+export default SocialNetworks;

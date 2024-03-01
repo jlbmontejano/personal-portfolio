@@ -1,4 +1,4 @@
-export const HEADER_OPTIONS = [
+export const MENU_OPTIONS = [
 	{ name: "HOME", scrollTo: "home" },
 	{ name: "ABOUT ME", scrollTo: "about-me" },
 	{ name: "WORK EXPERIENCE", scrollTo: "work-experience" },

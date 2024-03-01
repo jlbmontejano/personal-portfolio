@@ -19,9 +19,9 @@ const IndividualWork = ({ work }: IndividualWorkProps) => {
 
 	return (
 		<>
-			<div className='flex flex-col w-full lg:w-1/3 text-white'>
-				<button onClick={() => setIsOpen(true)} className='p-5 lg:hover:scale-102'>
-					<h5>{work.company}</h5>
+			<div className='flex flex-col w-full xl:w-1/3 '>
+				<button onClick={() => setIsOpen(true)} className='p-5 overflow-hidden'>
+					<h5 className='text-nowrap text-ellipsis whitespace-nowrap overflow-hidden'>{work.company}</h5>
 				</button>
 			</div>
 			<Transition show={isOpen} as={Fragment}>
@@ -35,11 +35,11 @@ const IndividualWork = ({ work }: IndividualWorkProps) => {
 					<Transition.Child as={Fragment} enter='ease-out duration-300' enterFrom='opacity-0' enterTo='opacity-100' leave='ease-in duration-200' leaveFrom='opacity-100' leaveTo='opacity-0'>
 						<div className='fixed inset-0 p-4 overflow-y-auto'>
 							<div className='flex min-h-full items-center justify-center p-4'>
-								<Dialog.Panel className='p-10 bg-white rounded-xl xl:w-1/2'>
-									<Dialog.Title className='mb-5' ref={workTitleRef}>
+								<Dialog.Panel className='p-5 md:p-10 bg-white rounded-xl lg:w-2/3'>
+									<Dialog.Title className='mb-5 text-center text-xl md:text-4xl' ref={workTitleRef}>
 										{work.company}
 									</Dialog.Title>
-									<Dialog.Description className='text-left'>
+									<Dialog.Description className='text-left text-sm md:text-base'>
 										<span className='font-bold'>Position: </span>
 										{work.position}
 										<br />
@@ -53,16 +53,18 @@ const IndividualWork = ({ work }: IndividualWorkProps) => {
 										{work.technologies}
 										<br />
 									</Dialog.Description>
-									<ul className='list-disc px-5'>
+									<ul className='text-sm md:text-base'>
 										{work.tasks.map(task => (
 											<li className='text-left' key={task}>
 												{task}
 											</li>
 										))}
 									</ul>
-									<button onClick={() => setIsOpen(false)} className='mt-5 px-6 py-2'>
-										Close
-									</button>
+									<div className='w-full flex justify-center '>
+										<button onClick={() => setIsOpen(false)} className='mt-5 px-6 py-2'>
+											Close
+										</button>
+									</div>
 								</Dialog.Panel>
 							</div>
 						</div>

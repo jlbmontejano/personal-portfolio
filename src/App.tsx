@@ -1,23 +1,14 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
-import Header from "./components/Header";
+import Menu from "./components/Menu";
 import Home from "./sections/Home";
 import AboutMe from "./sections/AboutMe";
 import WorkExperience from "./sections/WorkExperience";
 // import Projects from "./sections/Projects";
 import Other from "./sections/Other";
-import Footer from "./components/Footer";
 
 const App = () => {
-	AOS.init({
-		delay: 100,
-		duration: 800,
-		easing: "ease",
-	});
-
 	return (
-		<div>
-			<Header />
+		<div className='flex flex-col xl:flex-row'>
+			<Menu />
 			<div className='main-content'>
 				<Home />
 				<AboutMe />
@@ -25,7 +16,6 @@ const App = () => {
 				{/* <Projects /> */}
 				<Other />
 			</div>
-			<Footer />
 		</div>
 	);
 };

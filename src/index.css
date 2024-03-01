@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 html {
-  font-size: 20px;
-  text-align: center;
+  font-size: 18px;
 }
 
 @layer base {
@@ -17,7 +16,7 @@ html {
   }
 
   h3 {
-    @apply text-xl lg:text-4xl font-bold
+    @apply text-xl lg:text-4xl font-bold text-center
   }
 
   h4 {
@@ -29,44 +28,55 @@ html {
   }
 
   button {
-    @apply text-white bg-emerald-green rounded
+    @apply rounded border-black border-2
+  }
+
+  ul {
+    @apply list-disc pl-5
   }
 }
 
 @layer components {
   .main-content {
-    @apply px-5
+    @apply w-full xl:w-9/12 pb-5
   }
 
   .section-container {
-    @apply flex flex-col gap-7 w-full
+    @apply flex flex-col gap-7 w-full px-5 mt-3
   }
 
   .scroll-anchor {
     @apply pb-10
   }
 
-  .header,
-  .footer {
-    @apply flex w-full justify-center gap-2 md:gap-7 py-1 text-cream text-nowrap bg-emerald-green;
+  .mobile-menu {
+    @apply flex w-full justify-center gap-3 md:gap-7 py-1 text-nowrap bg-white sticky top-0 z-50
   }
 
-  .header>a,
-  .footer>a {
-    @apply text-xs md:text-xl
+  .desktop-menu {
+    @apply flex-col w-3/12 order-last h-screen items-end pr-4
+  }
+
+  .mobile-menu>a,
+  .social-networks>a {
+    @apply text-xs sm:text-lg
+  }
+
+  .social-networks {
+    @apply flex w-full gap-2 md:gap-7 mt-1 xl:mt-7
   }
 
   .work-projects-section {
-    @apply w-full flex flex-col gap-7 lg:flex-row
+    @apply w-full flex flex-col gap-7 xl:flex-row
   }
 }
 
 @layer utilities {
   a:hover {
-    @apply text-charcoal-gray underline cursor-pointer
+    @apply text-accent underline cursor-pointer
   }
 
   button:hover {
-    @apply hover:bg-dark-emerald-green text-cream underline
+    @apply bg-accent text-white
   }
 }

@@ -3,14 +3,11 @@ export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
 		fontFamily: {
-			sans: "Merriweather Sans",
+			sans: "Libre Franklin",
 		},
 		extend: {
 			colors: {
-				"emerald-green": "#50C878",
-				"dark-emerald-green": "#3AA569",
-				"charcoal-gray": "#36454F",
-				cream: "#FFFDD0",
+				accent: "#2e86ab",
 			},
 			scale: {
 				102: "1.02",

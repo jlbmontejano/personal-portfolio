@@ -1,14 +1,9 @@
 import { WORK_EXPERIENCE } from "../constants";
+import useAOS from "../customHooks/useAos";
 import IndividualWork from "../components/IndividualWork";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const WorkExperience = () => {
-	AOS.init({
-		delay: 100,
-		duration: 800,
-		easing: "ease",
-	});
+	useAOS();
 
 	return (
 		<div>
