@@ -14,12 +14,12 @@ export default {
 			},
 			keyframes: {
 				fadeRight: {
-					"0%": { opacity: "0", transform: "translateX(-12%)" },
+					"0%": { opacity: "0", transform: "translateX(-10%)" },
 					"100%": { opacity: "1", transform: "translateX(0)" },
 				},
 			},
 			animation: {
-				fadeRight: "fadeRight 1.5s ease-out forwards",
+				fadeRight: "fadeRight 1s ease-out forwards",
 			},
 		},
 	},

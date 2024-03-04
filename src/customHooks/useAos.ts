@@ -8,7 +8,6 @@ const useAOS = () => {
 			delay: 100,
 			duration: 800,
 			easing: "ease",
-			once: true,
 		});
 	}, []);
 

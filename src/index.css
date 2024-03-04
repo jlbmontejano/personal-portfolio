@@ -28,7 +28,7 @@ html {
   }
 
   button {
-    @apply rounded border-black border-2
+    @apply border-black border-2
   }
 
   ul {
