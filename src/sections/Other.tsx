@@ -23,7 +23,7 @@ const Education = () => {
 					<p className='font-bold'>Education:</p>
 					<p>Bachelor's Degree in Music</p>
 					<p>Centro Universitario de Estudios Musicales</p>
-					<p>Queretaro, MX; 2015 - 2019</p>
+					<p>Queretaro, MX</p>
 				</div>
 			</div>
 		</div>
