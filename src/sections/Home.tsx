@@ -11,7 +11,7 @@ const Home = () => {
 				</h2>
 			</div>
 			<div className='xl:mt-2'>
-				<h4>a Frontend Developer </h4>
+				<h4>a Full Stack Developer </h4>
 			</div>
 			<SocialNetworks />
 		</div>

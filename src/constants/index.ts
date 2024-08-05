@@ -6,19 +6,28 @@ export const MENU_OPTIONS = [
 	{ name: "OTHER", scrollTo: "other" },
 ];
 
-export const LANGUAGES = ["HTML, CSS & JavaScript", "Typescript", "Python", "SQL", "Swift"];
+export const LANGUAGES = [
+	"HTML, CSS & JavaScript",
+	"Typescript",
+	"SQL",
+	"Python",
+];
 
-export const TECHNOLOGIES = ["ReactJS", "Vue", "NodeJS", "Express", "GIT"];
+export const TECHNOLOGIES = ["ReactJS", "NodeJS", "PostgreSQL", "GIT"];
 
 export const WORK_EXPERIENCE = [
 	{
 		company: "Sportsminers",
-		position: "Front End Developer",
+		position: "Full Stack Developer",
 		location: "Mexicali, MX",
 		fromDate: "October 2023",
 		toDate: "Present",
-		technologies: "Typescript, ReactJS, React Query, TailwindCSS",
-		tasks: ["Leading the front-end development of a web application designed to transform how coaches manage and analyze sports teams, focusing on intuitive design and seamless user experience.", "Collaborated closely with the back-end team to ensure robust and seamless integration of APIs, optimizing data flow and user interaction."],
+		technologies: "Typescript, ReactJS, Node.js, PostgreSQL, TailwindCSS",
+		tasks: [
+			"Led the development of this sports fantasy league web app from inception; app is still in development.",
+			"Advised the client on a better approach for his project, which increased development speed and reduced projected costs.",
+			"Created a robust codebase that will allow users to create fantasy leagues to play with friends and other community members, featuring real time updates and a smooth user experience.",
+		],
 	},
 	{
 		company: "IT Nora",
@@ -27,7 +36,12 @@ export const WORK_EXPERIENCE = [
 		fromDate: "March 2022",
 		toDate: "October 2023",
 		technologies: "Typescript, Vue, Node.js, Google Firebase",
-		tasks: ["Led the development of IT Nora's official website, enhancing the company’s online presence and client engagement through a modern, responsive design.", "Engineered a comprehensive solution for a government application, incorporating extensive forms and validation mechanisms to streamline data collection and processing.", "Developed and implemented advanced features for a social media application, including post creation, in-post photo editing, and dynamic user profile updates, significantly enhancing user interaction and satisfaction.", "Diagnosed and resolved critical technical issues across various projects, leading to marked improvements in performance and user experience."],
+		tasks: [
+			"Led the development of IT Nora's official website, enhancing the company’s online presence and client engagement through a modern, responsive design.",
+			"Engineered a comprehensive solution for a government application, incorporating extensive forms and validation mechanisms to streamline data collection and processing.",
+			"Developed and implemented advanced features for a social media application, including post creation, in-post photo editing, and dynamic user profile updates, significantly enhancing user interaction and satisfaction.",
+			"Diagnosed and resolved critical technical issues across various projects, leading to marked improvements in performance and user experience.",
+		],
 	},
 	{
 		company: "Huard Technology Services",
@@ -36,7 +50,11 @@ export const WORK_EXPERIENCE = [
 		fromDate: "August 2021",
 		toDate: "March 2022",
 		technologies: "Swift",
-		tasks: ["Contract-based job, responsible of creating, maintaining and deploying iOS apps according to the client’s needs.", "Successfully delivered an application that facilitates real-time communication between iOS devices and snow-making machines, enabling efficient operational management and data exchange.", "Demonstrated exceptional problem-solving skills in developing a user-friendly interface and ensuring seamless device integration, contributing to the operational efficiency of snow-making operations."],
+		tasks: [
+			"Contract-based job, responsible of creating, maintaining and deploying iOS apps according to the client’s needs.",
+			"Successfully delivered an application that facilitates real-time communication between iOS devices and snow-making machines, enabling efficient operational management and data exchange.",
+			"Demonstrated exceptional problem-solving skills in developing a user-friendly interface and ensuring seamless device integration, contributing to the operational efficiency of snow-making operations.",
+		],
 	},
 ];
 
