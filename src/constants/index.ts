@@ -13,7 +13,15 @@ export const LANGUAGES = [
 	"Python",
 ];
 
-export const TECHNOLOGIES = ["ReactJS", "NodeJS", "PostgreSQL", "GIT"];
+export const TECHNOLOGIES = [
+	"ReactJS",
+	"Vue",
+	"NodeJS",
+	"Express",
+	"PostgreSQL",
+	"GIT",
+	"Google Cloud Platform",
+];
 
 export const WORK_EXPERIENCE = [
 	{
@@ -24,23 +32,24 @@ export const WORK_EXPERIENCE = [
 		toDate: "Present",
 		technologies: "Typescript, ReactJS, Node.js, PostgreSQL, TailwindCSS",
 		tasks: [
-			"Led the development of this sports fantasy league web app from inception; app is still in development.",
-			"Advised the client on a better approach for his project, which increased development speed and reduced projected costs.",
-			"Created a robust codebase that will allow users to create fantasy leagues to play with friends and other community members, featuring real time updates and a smooth user experience.",
+			"Led the development of this web app from inception, ensuring good coding practices, like maintainability, scalability and readability; app is still in development",
+			"Advised the client on a better approach for his project, increasing development speed and reducing projected costs by 10%",
+			"Implemented CI/CD pipelines which reduced code deployment time from ~15 minutes to ~5 minutes",
+			"Created a robust codebase that will allow users to create fantasy leagues to play with friends and other community members, featuring real time updates",
 		],
 	},
 	{
 		company: "IT Nora",
 		position: "Full Stack Developer",
 		location: "Mexicali, MX",
-		fromDate: "March 2022",
+		fromDate: "March 2023",
 		toDate: "October 2023",
-		technologies: "Typescript, Vue, Node.js, Google Firebase",
+		technologies: "Typescript, Vue, Node.js, Google Firebase, TailwindCSS",
 		tasks: [
-			"Led the development of IT Nora's official website, enhancing the company’s online presence and client engagement through a modern, responsive design.",
-			"Engineered a comprehensive solution for a government application, incorporating extensive forms and validation mechanisms to streamline data collection and processing.",
-			"Developed and implemented advanced features for a social media application, including post creation, in-post photo editing, and dynamic user profile updates, significantly enhancing user interaction and satisfaction.",
-			"Diagnosed and resolved critical technical issues across various projects, leading to marked improvements in performance and user experience.",
+			"Led the development of IT Nora's official website, enhancing the company’s online presence and client engagement through a modern, responsive design",
+			"Incorporated extensive validation mechanisms to streamline data collection and ",
+			"Developed advanced features for a social media application, significantly enhancing user interaction and increasing user satisfaction",
+			"Diagnosed and resolved critical technical issues across various projects, leading to marked improvements in performance",
 		],
 	},
 	{
@@ -49,11 +58,11 @@ export const WORK_EXPERIENCE = [
 		location: "Mexicali, MX",
 		fromDate: "August 2021",
 		toDate: "March 2022",
-		technologies: "Swift",
+		technologies: "Swift, SwiftUI",
 		tasks: [
-			"Contract-based job, responsible of creating, maintaining and deploying iOS apps according to the client’s needs.",
-			"Successfully delivered an application that facilitates real-time communication between iOS devices and snow-making machines, enabling efficient operational management and data exchange.",
-			"Demonstrated exceptional problem-solving skills in developing a user-friendly interface and ensuring seamless device integration, contributing to the operational efficiency of snow-making operations.",
+			"Contract-based job, responsible of creating, maintaining and deploying iOS apps according to the client’s needs",
+			"Successfully delivered an application that facilitates real-time communication between iOS devices and snow-making machines, enabling efficient operational management and data exchange",
+			"Demonstrated exceptional problem-solving skills in developing a user-friendly interface and ensuring seamless device integration",
 		],
 	},
 ];
