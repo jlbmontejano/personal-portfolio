@@ -56,8 +56,8 @@ export const WORK_EXPERIENCE = [
 		company: "Huard Technology Services",
 		position: "iOS App Developer",
 		location: "Mexicali, MX",
-		fromDate: "August 2021",
-		toDate: "March 2022",
+		fromDate: "August 2022",
+		toDate: "March 2023",
 		technologies: "Swift, SwiftUI",
 		tasks: [
 			"Contract-based job, responsible of creating, maintaining and deploying iOS apps according to the client’s needs",
