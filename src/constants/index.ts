@@ -30,7 +30,8 @@ export const WORK_EXPERIENCE = [
 		location: "Mexicali, MX",
 		fromDate: "October 2023",
 		toDate: "Present",
-		technologies: "Typescript, ReactJS, Node.js, PostgreSQL, TailwindCSS",
+		technologies:
+			"Typescript, ReactJS, Node.js, Google Cloud Platform, PostgreSQL, Prisma, TailwindCSS",
 		tasks: [
 			"Led the development of this web app from inception, ensuring good coding practices, like maintainability, scalability and readability; app is still in development",
 			"Advised the client on a better approach for his project, increasing development speed and reducing projected costs by 10%",
@@ -44,7 +45,8 @@ export const WORK_EXPERIENCE = [
 		location: "Mexicali, MX",
 		fromDate: "March 2023",
 		toDate: "October 2023",
-		technologies: "Typescript, Vue, Node.js, Google Firebase, TailwindCSS",
+		technologies:
+			"Typescript, Vue, Node.js, Google Cloud Playform, TailwindCSS",
 		tasks: [
 			"Led the development of IT Nora's official website, enhancing the company’s online presence and client engagement through a modern, responsive design",
 			"Incorporated extensive validation mechanisms to streamline data collection and ",
