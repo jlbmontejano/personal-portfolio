@@ -6,12 +6,7 @@ export const MENU_OPTIONS = [
 	{ name: "OTHER", scrollTo: "other" },
 ];
 
-export const LANGUAGES = [
-	"HTML, CSS & JavaScript",
-	"Typescript",
-	"SQL",
-	"Python",
-];
+export const LANGUAGES = ["HTML, CSS & JavaScript", "Typescript", "SQL"];
 
 export const TECHNOLOGIES = [
 	"ReactJS",
@@ -19,6 +14,7 @@ export const TECHNOLOGIES = [
 	"NodeJS",
 	"Express",
 	"PostgreSQL",
+	"Prisma",
 	"GIT",
 	"Google Cloud Platform",
 ];
@@ -28,7 +24,7 @@ export const WORK_EXPERIENCE = [
 		company: "Sportsminers",
 		position: "Full Stack Developer",
 		location: "Mexicali, MX",
-		fromDate: "October 2023",
+		fromDate: "10/2023",
 		toDate: "Present",
 		technologies:
 			"Typescript, ReactJS, Node.js, Google Cloud Platform, PostgreSQL, Prisma, TailwindCSS",
@@ -36,19 +32,18 @@ export const WORK_EXPERIENCE = [
 			"Led the development of this web app from inception, ensuring good coding practices, like maintainability, scalability and readability; app is still in development",
 			"Advised the client on a better approach for his project, increasing development speed and reducing projected costs by 10%",
 			"Implemented CI/CD pipelines which reduced code deployment time from ~15 minutes to ~5 minutes",
-			"Created a robust codebase that will allow users to create fantasy leagues to play with friends and other community members, featuring real time updates",
 		],
 	},
 	{
 		company: "IT Nora",
 		position: "Full Stack Developer",
 		location: "Mexicali, MX",
-		fromDate: "March 2023",
-		toDate: "October 2023",
+		fromDate: "03/2023",
+		toDate: "10/2023",
 		technologies:
 			"Typescript, Vue, Node.js, Google Cloud Playform, TailwindCSS",
 		tasks: [
-			"Led the development of IT Nora's official website, enhancing the company’s online presence and client engagement through a modern, responsive design",
+			"Led the development of company's official website, enhancing it’s online presence and client engagement through a modern, responsive design",
 			"Incorporated extensive validation mechanisms to streamline data collection and ",
 			"Developed advanced features for a social media application, significantly enhancing user interaction and increasing user satisfaction",
 			"Diagnosed and resolved critical technical issues across various projects, leading to marked improvements in performance",
@@ -58,8 +53,8 @@ export const WORK_EXPERIENCE = [
 		company: "Huard Technology Services",
 		position: "iOS App Developer",
 		location: "Mexicali, MX",
-		fromDate: "August 2022",
-		toDate: "March 2023",
+		fromDate: "08/2022",
+		toDate: "03/2023",
 		technologies: "Swift, SwiftUI",
 		tasks: [
 			"Contract-based job, responsible of creating, maintaining and deploying iOS apps according to the client’s needs",
@@ -77,23 +72,9 @@ export const PROJECTS = [
 		link: "https://relaxed-frangipane-1bb52e.netlify.app/",
 		code: "https://github.com/jlbmontejano/pokemon-api",
 	},
-	{
-		title: "Rock Paper Scissors",
-		image: "assets/rock-paper-scissors.png",
-		description: "Classic rock, paper, scissors game made with React.",
-		link: "https://steady-biscochitos-582e33.netlify.app/",
-		code: "https://github.com/jlbmontejano/rock-paper-scissors",
-	},
-	{
-		title: "Advice Generator",
-		image: "assets/advice-generator.png",
-		description: "Small project that fetches a random advice from an API.",
-		link: "https://shimmering-bunny-4c923a.netlify.app/",
-		code: "https://github.com/jlbmontejano/advice-generator-app",
-	},
 ];
 
 export const SOCIAL_NETWORKS = [
-	{ name: "GitHub", link: "https://github.com/jlbmontejano" },
 	{ name: "LinkedIn", link: "https://www.linkedin.com/in/jlbmontejano/" },
+	{ name: "GitHub", link: "https://github.com/jlbmontejano" },
 ];
