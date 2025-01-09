@@ -5,13 +5,12 @@ const Home = () => {
 		<div className='section-container mt-0 gap-0 h-screen justify-center animate-fadeRight'>
 			<div id='home' className='scroll-anchor absolute top-0' />
 			<div>
-				<h1 className='font-bold'>HI,</h1>
-				<h2>
-					my name is <span className='font-bold'>Jorge Buenrostro</span>
-				</h2>
+				<p className='font-bold text-5xl'>HI,</p>
+				<p className='text-4xl'>my name is</p>
+				<p className=' text-4xl font-bold'>Jorge Buenrostro</p>
 			</div>
-			<div className='xl:mt-2'>
-				<h4>a Full Stack Developer </h4>
+			<div className='text-xl xl:mt-2'>
+				<p>a Full Stack Developer </p>
 			</div>
 			<SocialNetworks />
 		</div>
