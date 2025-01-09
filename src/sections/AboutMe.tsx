@@ -10,7 +10,7 @@ const AboutMe = () => {
 			<div data-aos='fade-up' className='section-container mt-3'>
 				<h3>About Me</h3>
 				<p>
-					Software Engineer with 2 years of full-stack web development
+					Software engineer with 2 years of full-stack web development
 					experience specialized in React, Node and PostgreSQL. My passion for
 					technology and problem-solving drives me to constantly seek new
 					challenges that expand my skill set and contribute to the success of
