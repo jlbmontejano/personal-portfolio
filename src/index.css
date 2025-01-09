@@ -3,80 +3,87 @@
 @tailwind utilities;
 
 html {
-  font-size: 18px;
+	font-size: 14px;
+
+	@screen md {
+		font-size: 16px;
+	}
+
+	@screen xl {
+		font-size: 20px;
+	}
 }
 
 @layer base {
-  h1 {
-    @apply text-3xl lg:text-8xl
-  }
+	h1 {
+		@apply text-3xl lg:text-8xl;
+	}
 
-  h2 {
-    @apply text-2xl lg:text-5xl
-  }
+	h2 {
+		@apply text-2xl lg:text-5xl;
+	}
 
-  h3 {
-    @apply text-xl lg:text-4xl font-bold text-center
-  }
+	h3 {
+		@apply text-xl lg:text-4xl font-bold text-center;
+	}
 
-  h4 {
-    @apply text-lg lg:text-3xl
-  }
+	h4 {
+		@apply text-lg lg:text-3xl;
+	}
 
-  h5 {
-    @apply text-base lg:text-2xl
-  }
+	h5 {
+		@apply text-base lg:text-2xl;
+	}
 
-  button {
-    @apply border-black border-2
-  }
+	button {
+		@apply border-black border-2;
+	}
 
-  ul {
-    @apply list-disc pl-5
-  }
+	ul {
+		@apply list-disc pl-5;
+	}
 }
 
 @layer components {
-  .main-content {
-    @apply w-full xl:w-9/12 pb-5
-  }
+	.main-content {
+		@apply w-full xl:w-9/12 pb-5;
+	}
 
-  .section-container {
-    @apply flex flex-col gap-7 w-full px-5 mt-3
-  }
+	.section-container {
+		@apply flex flex-col gap-7 w-full px-5 mt-3;
+	}
 
-  .scroll-anchor {
-    @apply pb-10
-  }
+	.scroll-anchor {
+		@apply pb-10;
+	}
 
-  .mobile-menu {
-    @apply flex w-full justify-center gap-3 md:gap-7 py-1 text-nowrap bg-white sticky top-0 z-50
-  }
+	.mobile-menu {
+		@apply flex w-full justify-center gap-3 md:gap-7 py-1 text-nowrap bg-white sticky top-0 z-50;
+	}
 
-  .desktop-menu {
-    @apply flex-col w-3/12 order-last h-screen items-end pr-4
-  }
+	.desktop-menu {
+		@apply flex-col w-3/12 order-last h-screen items-end pr-4;
+	}
 
-  .mobile-menu>a,
-  .social-networks>a {
-    @apply text-xs sm:text-lg
-  }
+	.mobile-menu > a {
+		@apply text-xs sm:text-lg;
+	}
 
-  .social-networks {
-    @apply flex w-full gap-2 md:gap-7 mt-1 xl:mt-7
-  }
+	.social-networks {
+		@apply flex w-full gap-2 md:gap-7 mt-1 xl:mt-7;
+	}
 
-  .work-projects-section {
-    @apply w-full flex flex-col gap-7 xl:flex-row
-  }
+	.work-projects-section {
+		@apply w-full flex flex-col gap-7 xl:flex-row;
+	}
 }
 
 @layer utilities {
-  a:hover {
-    @apply text-accent underline cursor-pointer
-  }
+	a:hover {
+		@apply text-accent underline cursor-pointer;
+	}
 
-  button:hover {
-    @apply bg-accent text-white
-  }
+	button:hover {
+		@apply bg-accent text-white;
+	}
 }
