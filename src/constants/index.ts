@@ -6,17 +6,14 @@ export const MENU_OPTIONS = [
 	{ name: "OTHER", scrollTo: "other" },
 ];
 
-export const LANGUAGES = ["HTML, CSS & JavaScript", "Typescript", "SQL"];
-
-export const TECHNOLOGIES = [
-	"ReactJS",
-	"Vue",
-	"NodeJS",
-	"Express",
-	"PostgreSQL",
-	"Prisma",
-	"GIT",
-	"Google Cloud Platform",
+export const TECH_STACK = [
+	{ title: "Languages", data: ["HTML, CSS & JavaScript", "Typescript", "SQL"] },
+	{
+		title: "Frameworks & Libraries",
+		data: ["ReactJS", "Vue", "NodeJS", "Express", "Prisma"],
+	},
+	{ title: "Databases", data: ["PostgreSQL", "Cloud Firestore"] },
+	{ title: "Technical Skills", data: ["GIT", "CI/CD", "REST APIs"] },
 ];
 
 export const WORK_EXPERIENCE = [
@@ -25,7 +22,7 @@ export const WORK_EXPERIENCE = [
 		position: "Full Stack Developer",
 		location: "Mexicali, MX",
 		fromDate: "10/2023",
-		toDate: "Present",
+		toDate: "01/2025",
 		technologies:
 			"Typescript, ReactJS, Node.js, Google Cloud Platform, PostgreSQL, Prisma, TailwindCSS",
 		tasks: [

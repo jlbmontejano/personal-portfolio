@@ -9,10 +9,6 @@ const Education = () => {
 			<div data-aos='fade-up' className='section-container'>
 				<h3>Other</h3>
 				<div>
-					<p className='font-bold'>Location:</p>
-					<p> Mexicali, Mexico</p>
-				</div>
-				<div>
 					<p className='font-bold'>Languages:</p>
 					<ul className='list-none pl-0'>
 						<li>Spanish (Native)</li>
@@ -23,7 +19,7 @@ const Education = () => {
 					<p className='font-bold'>Education:</p>
 					<p>Bachelor's Degree in Music</p>
 					<p>Centro Universitario de Estudios Musicales</p>
-					<p>2019 - Queretaro, MX</p>
+					<p>Queretaro, Mexico</p>
 				</div>
 			</div>
 		</div>

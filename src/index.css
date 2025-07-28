@@ -65,7 +65,7 @@ html {
 		@apply flex-col w-3/12 order-last h-screen items-end pr-4;
 	}
 
-	.mobile-menu > a {
+	.mobile-menu>a {
 		@apply text-xs sm:text-lg;
 	}
 
