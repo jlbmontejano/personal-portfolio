@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 html {
+	background-color: #F8F9FA;
+	color: #2B2B2B;
 	font-size: 14px;
 
 	@screen md {
@@ -50,27 +52,23 @@ html {
 	}
 
 	.section-container {
-		@apply flex flex-col gap-7 w-full px-5 mt-3;
+		@apply flex flex-col gap-7 w-full px-5 my-3;
 	}
 
 	.scroll-anchor {
 		@apply pb-10;
 	}
 
-	.mobile-menu {
-		@apply flex w-full justify-center gap-3 md:gap-7 py-1 text-nowrap bg-white sticky top-0 z-50;
+	.menu {
+		@apply flex w-full justify-center items-center gap-3 md:gap-7 py-1 text-nowrap bg-off_white sticky top-0 z-50;
 	}
 
-	.desktop-menu {
-		@apply flex-col w-3/12 order-last h-screen items-end pr-4;
-	}
-
-	.mobile-menu>a {
-		@apply text-xs sm:text-lg;
+	.menu>a {
+		@apply text-sm sm:text-lg;
 	}
 
 	.social-networks {
-		@apply flex w-full gap-2 md:gap-7 mt-1 xl:mt-7;
+		@apply flex w-full gap-3 md:gap-5 mt-1 xl:mt-7;
 	}
 
 	.work-projects-section {

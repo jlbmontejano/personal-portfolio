@@ -7,7 +7,9 @@ export default {
 		},
 		extend: {
 			colors: {
-				accent: "#2e86ab",
+				off_white: "#F8F9FA",
+				charcoal: "#2B2B2B",
+				accent: "#10B981",
 			},
 			scale: {
 				102: "1.02",
