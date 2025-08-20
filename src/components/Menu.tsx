@@ -1,14 +1,15 @@
 import { MENU_OPTIONS } from "../constants/index";
+import { MenuNavigation } from "../types";
 
-const Menu = () => {
-	const handleClick = (scrollTo: string) => {
-		document.getElementById(scrollTo)?.scrollIntoView({ behavior: "smooth" });
-	};
+type MenuProps = {
+	setCurrent: React.Dispatch<React.SetStateAction<MenuNavigation>>;
+};
 
+const Menu = ({ setCurrent }: MenuProps) => {
 	return (
-		<div className='mobile-menu xl:desktop-menu'>
+		<div className='menu'>
 			{MENU_OPTIONS.map(option => (
-				<a onClick={() => handleClick(option.scrollTo)} key={option.name} className='hover:xl:scale-110 origin-bottom-right duration-150 xl:w-min'>
+				<a onClick={() => setCurrent(option.scrollTo)} key={option.name}>
 					{option.name}
 				</a>
 			))}
