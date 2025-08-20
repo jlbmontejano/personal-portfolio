@@ -18,6 +18,9 @@ const SocialNetworks = () => {
 				rel='noreferrer'>
 				Resume
 			</a>
+			<a href='mailto:jlbmontejano@gmail.com' target='_blank' rel='noreferrer'>
+				Contact Me
+			</a>
 		</div>
 	);
 };
