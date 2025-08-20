@@ -1,21 +1,32 @@
+import { useState } from "react";
 import Menu from "./components/Menu";
-import Home from "./sections/Home";
 import AboutMe from "./sections/AboutMe";
-import WorkExperience from "./sections/WorkExperience";
-// import Projects from "./sections/Projects";
+import Home from "./sections/Home";
 import Other from "./sections/Other";
+import WorkExperience from "./sections/WorkExperience";
+import { MenuNavigation } from "./types";
 
 const App = () => {
+	const [current, setCurrent] = useState<MenuNavigation>("home");
+
+	const displayPage = () => {
+		switch (current) {
+			case "home":
+				return <Home />;
+			case "about-me":
+				return <AboutMe />;
+			case "work-experience":
+				return <WorkExperience />;
+			case "other":
+				return <Other />;
+			default:
+		}
+	};
+
 	return (
-		<div className='flex flex-col xl:flex-row'>
-			<Menu />
-			<div className='main-content'>
-				<Home />
-				<AboutMe />
-				<WorkExperience />
-				{/* <Projects /> */}
-				<Other />
-			</div>
+		<div className='flex flex-col h-screen'>
+			<Menu setCurrent={setCurrent} />
+			{displayPage()}
 		</div>
 	);
 };
