@@ -1,4 +1,6 @@
-export const MENU_OPTIONS = [
+import { MenuNavigation } from "../types";
+
+export const MENU_OPTIONS: { name: string; scrollTo: MenuNavigation }[] = [
 	{ name: "HOME", scrollTo: "home" },
 	{ name: "ABOUT ME", scrollTo: "about-me" },
 	{ name: "WORK EXPERIENCE", scrollTo: "work-experience" },
@@ -26,9 +28,9 @@ export const WORK_EXPERIENCE = [
 		technologies:
 			"Typescript, ReactJS, Node.js, Google Cloud Platform, PostgreSQL, Prisma, TailwindCSS",
 		tasks: [
-			"Led the development of this web app from inception, ensuring good coding practices, like maintainability, scalability and readability; app is still in development",
-			"Advised the client on a better approach for his project, increasing development speed and reducing projected costs by 10%",
-			"Implemented CI/CD pipelines which reduced code deployment time from ~15 minutes to ~5 minutes",
+			"Led the development of this web app from inception, ensuring good coding practices, like maintainability, scalability and readability",
+			"Advised the client on a better approach for his project, increasing development speed and reducing projected costs",
+			"Implemented CI/CD pipelines greatly reducing code deployment time",
 		],
 	},
 	{
@@ -61,15 +63,7 @@ export const WORK_EXPERIENCE = [
 	},
 ];
 
-export const PROJECTS = [
-	{
-		title: "Pokemon-API",
-		image: "assets/pokemon-api.png",
-		description: "Webapp that uses the PokeAPI to display pokemon information.",
-		link: "https://relaxed-frangipane-1bb52e.netlify.app/",
-		code: "https://github.com/jlbmontejano/pokemon-api",
-	},
-];
+export const PROJECTS = [];
 
 export const SOCIAL_NETWORKS = [
 	{ name: "LinkedIn", link: "https://www.linkedin.com/in/jlbmontejano/" },
