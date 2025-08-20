@@ -20,7 +20,7 @@ const IndividualWork = ({ work }: IndividualWorkProps) => {
 	return (
 		<>
 			<div className='flex flex-col w-full'>
-				<button onClick={() => setIsOpen(true)} className='p-5'>
+				<button onClick={() => setIsOpen(true)} className='p-5 rounded-xl'>
 					<h5 className='text-nowrap text-ellipsis whitespace-nowrap'>
 						{work.company}
 					</h5>
@@ -87,10 +87,10 @@ const IndividualWork = ({ work }: IndividualWorkProps) => {
 											</li>
 										))}
 									</ul>
-									<div className='w-full flex justify-center '>
+									<div className='w-full flex justify-center'>
 										<button
 											onClick={() => setIsOpen(false)}
-											className='mt-5 px-6 py-2'>
+											className='mt-5 px-6 py-2 rounded-xl'>
 											Close
 										</button>
 									</div>
