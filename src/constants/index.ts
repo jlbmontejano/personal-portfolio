@@ -1,11 +1,11 @@
 import { MenuNavigation } from "../types";
 
-export const MENU_OPTIONS: { name: string; scrollTo: MenuNavigation }[] = [
-	{ name: "HOME", scrollTo: "home" },
-	{ name: "ABOUT ME", scrollTo: "about-me" },
-	{ name: "WORK EXPERIENCE", scrollTo: "work-experience" },
+export const MENU_OPTIONS: { name: string; goTo: MenuNavigation }[] = [
+	{ name: "HOME", goTo: "" },
+	{ name: "ABOUT ME", goTo: "about-me" },
+	{ name: "WORK EXPERIENCE", goTo: "work-experience" },
 	// { name: "PROJECTS", scrollTo: "projects" },
-	{ name: "OTHER", scrollTo: "other" },
+	{ name: "OTHER", goTo: "other" },
 ];
 
 export const TECH_STACK = [
@@ -67,5 +67,5 @@ export const PROJECTS = [];
 
 export const SOCIAL_NETWORKS = [
 	{ name: "LinkedIn", link: "https://www.linkedin.com/in/jlbmontejano/" },
-	{ name: "GitHub", link: "https://github.com/jlbmontejano" },
+	// { name: "GitHub", link: "https://github.com/jlbmontejano" },
 ];

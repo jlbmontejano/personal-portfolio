@@ -1,17 +1,16 @@
+import { NavLink } from "react-router";
 import { MENU_OPTIONS } from "../constants/index";
-import { MenuNavigation } from "../types";
 
-type MenuProps = {
-	setCurrent: React.Dispatch<React.SetStateAction<MenuNavigation>>;
-};
-
-const Menu = ({ setCurrent }: MenuProps) => {
+const Menu = () => {
 	return (
 		<div className='menu'>
 			{MENU_OPTIONS.map(option => (
-				<a onClick={() => setCurrent(option.scrollTo)} key={option.name}>
+				<NavLink
+					to={option.goTo}
+					className={({ isActive }) => `${isActive ? "font-bold" : ""} `}
+					key={option.name}>
 					{option.name}
-				</a>
+				</NavLink>
 			))}
 		</div>
 	);

@@ -1,1 +1,1 @@
-export type MenuNavigation = "home" | "about-me" | "work-experience" | "other";
+export type MenuNavigation = "" | "about-me" | "work-experience" | "other";

@@ -1,32 +1,22 @@
-import { useState } from "react";
+import { Route, Routes } from "react-router";
 import Menu from "./components/Menu";
 import AboutMe from "./sections/AboutMe";
 import Home from "./sections/Home";
 import Other from "./sections/Other";
+import Projects from "./sections/Projects";
 import WorkExperience from "./sections/WorkExperience";
-import { MenuNavigation } from "./types";
 
 const App = () => {
-	const [current, setCurrent] = useState<MenuNavigation>("home");
-
-	const displayPage = () => {
-		switch (current) {
-			case "home":
-				return <Home />;
-			case "about-me":
-				return <AboutMe />;
-			case "work-experience":
-				return <WorkExperience />;
-			case "other":
-				return <Other />;
-			default:
-		}
-	};
-
 	return (
 		<div className='flex flex-col h-screen'>
-			<Menu setCurrent={setCurrent} />
-			{displayPage()}
+			<Menu />
+			<Routes>
+				<Route path='/' element={<Home />} />
+				<Route path='/about-me' element={<AboutMe />} />
+				<Route path='/work-experience' element={<WorkExperience />} />
+				<Route path='/projects' element={<Projects />} />
+				<Route path='/other' element={<Other />} />
+			</Routes>
 		</div>
 	);
 };
