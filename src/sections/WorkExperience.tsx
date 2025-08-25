@@ -6,15 +6,12 @@ const WorkExperience = () => {
 	useAOS();
 
 	return (
-		<div>
-			<div id='work-experience' className='scroll-anchor' />
-			<div data-aos='fade-up' className='section-container'>
-				<h3>Work Experience</h3>
-				<div className='work-projects-section'>
-					{WORK_EXPERIENCE.map((work, workIdx) => (
-						<IndividualWork work={work} key={workIdx} />
-					))}
-				</div>
+		<div data-aos='fade-up' className='section-container'>
+			<h3>Work Experience</h3>
+			<div className='work-projects-section'>
+				{WORK_EXPERIENCE.map((work, workIdx) => (
+					<IndividualWork work={work} key={workIdx} />
+				))}
 			</div>
 		</div>
 	);

@@ -14,7 +14,7 @@ const AboutMe = () => {
 				solving real-world problems through clean, maintainable code.
 			</p>
 
-			<div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4'>
+			<div className='grid grid-cols-1 sm:grid-cols-2'>
 				{TECH_STACK.map(stack => (
 					<div className='mb-2' key={stack.title}>
 						<h4 className='font-bold'> {stack.title}: </h4>

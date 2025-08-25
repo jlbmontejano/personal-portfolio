@@ -19,7 +19,7 @@ const IndividualWork = ({ work }: IndividualWorkProps) => {
 
 	return (
 		<>
-			<div className='flex flex-col w-full'>
+			<div className='flex flex-col w-full max-w-[800px] self-center'>
 				<button onClick={() => setIsOpen(true)} className='p-5 rounded-xl'>
 					<h5 className='text-nowrap text-ellipsis whitespace-nowrap'>
 						{work.company}
