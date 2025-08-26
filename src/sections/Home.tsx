@@ -2,7 +2,7 @@ import SocialNetworks from '../components/SocialNetworks';
 
 const Home = () => {
 	return (
-		<div className='section-container h-screen animate-fadeRight justify-center bg-off_white'>
+		<div className='section-container h-screen animate-fadeRight justify-center gap-1 bg-off_white'>
 			<div>
 				<p className='text-5xl font-bold'>HI,</p>
 				<p className='text-4xl'>my name is</p>
