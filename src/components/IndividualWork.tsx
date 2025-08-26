@@ -1,106 +1,35 @@
-import { useState, Fragment, useRef } from "react";
-import { Dialog, Transition } from "@headlessui/react";
+import { WorkExperience } from '../types';
 
 type IndividualWorkProps = {
-	work: {
-		company: string;
-		position: string;
-		location: string;
-		fromDate: string;
-		toDate: string;
-		technologies: string;
-		tasks: string[];
-	};
+	work: WorkExperience;
+	zIndex: number;
 };
 
-const IndividualWork = ({ work }: IndividualWorkProps) => {
-	const [isOpen, setIsOpen] = useState(false);
-	const workTitleRef = useRef(null);
-
+const IndividualWork = ({ work, zIndex }: IndividualWorkProps) => {
 	return (
-		<>
-			<div className='flex flex-col w-full max-w-[800px] self-center'>
-				<button onClick={() => setIsOpen(true)} className='p-5 rounded-xl'>
-					<h5 className='text-nowrap text-ellipsis whitespace-nowrap'>
+		<div
+			className='sticky top-[4rem] flex w-full flex-col bg-white py-[1rem] lg:flex-row'
+			style={{ zIndex }}>
+			<div className='text-3xl font-semibold lg:text-5xl'>
+				{work.number}.
+			</div>
+			<div className='pt-[1rem] lg:pl-[2rem] lg:pt-0'>
+				<div>
+					<p className='text-lg font-semibold lg:text-2xl'>
 						{work.company}
-					</h5>
-					<p className='text-sm text-nowrap text-ellipsis whitespace-nowrap'>
-						{work.position}
 					</p>
-					<p className='text-xs text-nowrap text-ellipsis whitespace-nowrap'>
+					<p>{work.position}</p>
+					<p>
 						{work.fromDate} - {work.toDate}
 					</p>
-				</button>
+				</div>
+				<ul className='mt-2 text-sm md:text-base'>
+					{work.tasks.map(task => (
+						<li key={task}>{task}</li>
+					))}
+				</ul>
 			</div>
-			<Transition show={isOpen} as={Fragment}>
-				<Dialog
-					onClose={() => setIsOpen(false)}
-					initialFocus={workTitleRef}
-					className='relative z-50'>
-					{/* Backdrop */}
-					<Transition.Child
-						as={Fragment}
-						enter='ease-out duration-300'
-						enterFrom='opacity-0'
-						enterTo='opacity-100'
-						leave='ease-in duration-200'
-						leaveFrom='opacity-100'
-						leaveTo='opacity-0'>
-						<div className='fixed inset-0 bg-black/30' aria-hidden='true' />
-					</Transition.Child>
-
-					{/* Full-screen scrollable container */}
-					<Transition.Child
-						as={Fragment}
-						enter='ease-out duration-300'
-						enterFrom='opacity-0'
-						enterTo='opacity-100'
-						leave='ease-in duration-200'
-						leaveFrom='opacity-100'
-						leaveTo='opacity-0'>
-						<div className='fixed inset-0 p-4 overflow-y-auto'>
-							<div className='flex min-h-full items-center justify-center p-4'>
-								<Dialog.Panel className='p-5 md:p-10 bg-white rounded-xl lg:w-1/2'>
-									<Dialog.Title
-										className='mb-5 text-center text-xl md:text-4xl'
-										ref={workTitleRef}>
-										{work.company}
-									</Dialog.Title>
-									<Dialog.Description className='text-left text-sm md:text-base'>
-										<span className='font-bold'>Position: </span>
-										{work.position}
-										<br />
-										<span className='font-bold'>Location: </span>
-										{work.location}
-										<br />
-										<span className='font-bold'>Duration: </span>
-										{work.fromDate} - {work.toDate}
-										<br />
-										<span className='font-bold'>Technologies: </span>
-										{work.technologies}
-										<br />
-									</Dialog.Description>
-									<ul className='text-sm md:text-base'>
-										{work.tasks.map(task => (
-											<li className='text-left' key={task}>
-												{task}
-											</li>
-										))}
-									</ul>
-									<div className='w-full flex justify-center'>
-										<button
-											onClick={() => setIsOpen(false)}
-											className='mt-5 px-6 py-2 rounded-xl'>
-											Close
-										</button>
-									</div>
-								</Dialog.Panel>
-							</div>
-						</div>
-					</Transition.Child>
-				</Dialog>
-			</Transition>
-		</>
+		</div>
 	);
 };
 
