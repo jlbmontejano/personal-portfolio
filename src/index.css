@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 html {
-	background-color: #F8F9FA;
-	color: #2B2B2B;
+	color: #212121;
 	font-size: 14px;
 
 	@screen md {
@@ -17,59 +16,30 @@ html {
 }
 
 @layer base {
-	h1 {
-		@apply text-3xl lg:text-8xl;
-	}
-
-	h2 {
-		@apply text-2xl lg:text-5xl;
-	}
-
-	h3 {
-		@apply text-xl lg:text-4xl font-bold text-center;
-	}
-
-	h4 {
-		@apply text-lg lg:text-3xl;
-	}
-
-	h5 {
-		@apply text-base lg:text-2xl;
-	}
-
-	button {
-		@apply border-black border-2;
-	}
-
 	ul {
 		@apply list-disc pl-5;
+	}
+
+	a {
+		@apply transition-colors duration-500 hover:cursor-pointer hover:text-accent;
 	}
 }
 
 @layer components {
+	.horizontal-padding {
+		@apply px-[.75rem] md:px-[2rem] lg:px-[5rem];
+	}
+
+	.menu,
+	.footer {
+		@apply horizontal-padding flex w-full justify-between py-[1rem] text-sm;
+	}
+
 	.section-container {
-		@apply flex flex-col gap-7 w-full px-5 my-3;
+		@apply horizontal-padding flex w-full flex-col gap-7 py-[5rem];
 	}
 
-	.menu {
-		@apply flex w-full justify-center items-center gap-3 md:gap-7 py-1 sticky top-0 z-50;
-	}
-
-	.menu>a {
-		@apply text-sm sm:text-lg hover:font-bold hover:text-accent hover:underline;
-	}
-
-	.social-networks {
-		@apply flex w-full gap-3 md:gap-5 mt-1 xl:mt-7;
-	}
-
-	.work-projects-section {
-		@apply w-full flex flex-col gap-7;
-	}
-}
-
-@layer utilities {
-	button:hover {
-		@apply bg-accent text-white;
+	.section-title {
+		@apply text-custom_gray text-xl font-semibold;
 	}
 }
