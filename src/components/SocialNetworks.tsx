@@ -1,8 +1,8 @@
-import { SOCIAL_NETWORKS } from "../constants";
+import { SOCIAL_NETWORKS } from '../constants';
 
 const SocialNetworks = () => {
 	return (
-		<div className='social-networks'>
+		<div className='mt-2 flex w-full gap-3 md:gap-5 xl:mt-4'>
 			{SOCIAL_NETWORKS.map(network => (
 				<a
 					href={network.link}
@@ -18,7 +18,10 @@ const SocialNetworks = () => {
 				rel='noreferrer'>
 				Resume
 			</a>
-			<a href='mailto:jlbmontejano@gmail.com' target='_blank' rel='noreferrer'>
+			<a
+				href='mailto:jlbmontejano@gmail.com'
+				target='_blank'
+				rel='noreferrer'>
 				Contact Me
 			</a>
 		</div>
