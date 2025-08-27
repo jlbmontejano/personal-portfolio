@@ -13,7 +13,7 @@ const SocialNetworks = () => {
 				</a>
 			))}
 			<a
-				href='personal-portfolio/assets/CV-Jorge-Luis-Buenrostro-Montejano.pdf'
+				href='assets/CV-Jorge-Luis-Buenrostro-Montejano.pdf'
 				target='_blank'
 				rel='noreferrer'>
 				Resume
