@@ -20,11 +20,13 @@ const AboutMe = () => {
 							clean, maintainable code.
 						</p>
 						<p className='pt-7'>
-							Outside of tech, I enjoy music, video games,
-							gardening, and hanging out with my cats. These
-							hobbies help me stay creative and grounded, and I’ve
-							found they often influence how I think about problem
-							solving and user experience.
+							I’m someone who values collaboration and enjoys
+							being part of a team that shares knowledge and
+							builds things that matter. I pay close attention to
+							detail and take pride in writing code that's both
+							clean and practical. Outside of tech, I enjoy music,
+							video games, gardening, and hanging out with my
+							cats.
 						</p>
 					</div>
 					<div className='grid w-full grid-cols-1 sm:grid-cols-2'>
