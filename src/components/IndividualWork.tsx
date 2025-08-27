@@ -1,4 +1,4 @@
-import { WorkExperience } from '../types';
+import { WorkExperience } from "../types";
 
 type IndividualWorkProps = {
 	work: WorkExperience;

@@ -1,4 +1,4 @@
-import { SOCIAL_NETWORKS } from '../constants';
+import { SOCIAL_NETWORKS } from "../constants";
 
 const SocialNetworks = () => {
 	return (

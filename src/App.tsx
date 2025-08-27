@@ -1,9 +1,9 @@
-import Footer from './components/Footer';
-import Menu from './components/Menu';
-import AboutMe from './sections/AboutMe';
-import Home from './sections/Home';
-import Other from './sections/Other';
-import WorkExperience from './sections/WorkExperience';
+import Footer from "./components/Footer";
+import Menu from "./components/Menu";
+import AboutMe from "./sections/AboutMe";
+import Home from "./sections/Home";
+import Other from "./sections/Other";
+import WorkExperience from "./sections/WorkExperience";
 
 const App = () => {
 	return (

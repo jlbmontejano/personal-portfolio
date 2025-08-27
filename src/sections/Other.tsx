@@ -1,4 +1,4 @@
-import useAOS from '../customHooks/useAos';
+import useAOS from "../customHooks/useAos";
 
 const Other = () => {
 	useAOS();

@@ -1,6 +1,6 @@
-import { WORK_EXPERIENCE } from '../constants';
-import useAOS from '../customHooks/useAos';
-import IndividualWork from '../components/IndividualWork';
+import { WORK_EXPERIENCE } from "../constants";
+import useAOS from "../customHooks/useAos";
+import IndividualWork from "../components/IndividualWork";
 
 const WorkExperience = () => {
 	useAOS();

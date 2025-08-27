@@ -1,4 +1,4 @@
-import { Project } from '../types';
+import { Project } from "../types";
 
 const IndividualProject = ({ project }: { project: Project }) => {
 	return (

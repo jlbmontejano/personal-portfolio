@@ -1,6 +1,6 @@
-import { PROJECTS } from '../constants';
-import useAOS from '../customHooks/useAos';
-import IndividualProject from '../components/IndividualProject';
+import { PROJECTS } from "../constants";
+import useAOS from "../customHooks/useAos";
+import IndividualProject from "../components/IndividualProject";
 
 const Projects = () => {
 	useAOS();
