@@ -1,6 +1,9 @@
 import { MENU_OPTIONS } from "../constants/index";
+import useAOS from "../customHooks/useAos";
 
 const Menu = () => {
+	useAOS();
+
 	const handleClick = (scrollTo: string) => {
 		document
 			.getElementById(scrollTo)
@@ -9,8 +12,10 @@ const Menu = () => {
 
 	return (
 		<div className='menu sticky top-0 z-50 bg-off_white sm:text-lg'>
-			<a onClick={() => handleClick("home")}>Jorge Buenrostro</a>
-			<div className='flex gap-3 lg:gap-6'>
+			<a onClick={() => handleClick("home")} data-aos='fade-down'>
+				Jorge Buenrostro
+			</a>
+			<div className='flex gap-3 lg:gap-6' data-aos='fade-down'>
 				{MENU_OPTIONS.map(option => (
 					<a
 						onClick={() => handleClick(option.scrollTo)}

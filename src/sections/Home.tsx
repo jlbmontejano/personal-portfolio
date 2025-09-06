@@ -1,9 +1,12 @@
 import SocialNetworks from "../components/SocialNetworks";
+import useAOS from "../customHooks/useAos";
 
 const Home = () => {
+	useAOS();
+
 	return (
 		<div className='section-container h-screen justify-center bg-off_white'>
-			<div className='animate-fadeRight'>
+			<div data-aos='fade-right'>
 				<div>
 					<p className='text-5xl font-bold'>HI,</p>
 					<p className='text-4xl'>my name is</p>
