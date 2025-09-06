@@ -6,7 +6,7 @@ const useAOS = () => {
 	useEffect(() => {
 		AOS.init({
 			delay: 100,
-			duration: 1000,
+			duration: 1200,
 			easing: "ease",
 		});
 	}, []);
