@@ -6,11 +6,11 @@ const Projects = () => {
 	useAOS();
 
 	return (
-		<div data-aos='fade-up' className='section-container'>
+		<div className='section-container' data-aos='fade-up'>
 			<p className='section-title'>── Projects</p>
 			<p>
-				These are some of my personal projects that I've worked on so
-				far. I am constantly updating and improving them.
+				These are some of the projects I've worked on so far. Feel free
+				to look around.
 			</p>
 			<div className='grid grid-cols-2'>
 				{PROJECTS.map((project, projectIdx) => (
