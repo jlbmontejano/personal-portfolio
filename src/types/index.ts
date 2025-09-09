@@ -12,7 +12,6 @@ export type WorkExperience = {
 	number: string;
 	company: string;
 	position: string;
-	location: string;
 	fromDate: string;
 	toDate: string;
 	technologies: string;
