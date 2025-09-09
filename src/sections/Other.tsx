@@ -11,18 +11,19 @@ const Other = () => {
 					── Other
 				</p>
 				<div data-aos='fade-up'>
+					<p className='font-bold'>Education:</p>
+					<p>Centro Universitario de Estudios Musicales</p>
+					<p>Bachelor of Music</p>
+					<p>Dec 2019</p>
+				</div>
+				<div data-aos='fade-up'>
 					<p className='font-bold'>Languages:</p>
 					<ul className='list-none pl-0'>
 						<li>Spanish (Native)</li>
 						<li>English (Bilingual)</li>
 					</ul>
 				</div>
-				<div data-aos='fade-up'>
-					<p className='font-bold'>Education:</p>
-					<p>Bachelor's Degree in Music</p>
-					<p>Centro Universitario de Estudios Musicales</p>
-					<p>Queretaro, Mexico</p>
-				</div>
+
 				<div data-aos='fade-up'>
 					<p className='font-bold'>Location:</p>
 					<p>Auckland, New Zealand</p>
