@@ -25,9 +25,8 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 		number: "01",
 		company: "Sportsminers",
 		position: "Full Stack Developer",
-		location: "Mexicali, MX",
-		fromDate: "10/2023",
-		toDate: "01/2025",
+		fromDate: "Oct 2023",
+		toDate: "Jan 2025",
 		technologies:
 			"Typescript, ReactJS, Node.js, Google Cloud Platform, PostgreSQL, Prisma, TailwindCSS",
 		tasks: [
@@ -40,9 +39,8 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 		number: "02",
 		company: "IT Nora",
 		position: "Full Stack Developer",
-		location: "Mexicali, MX",
-		fromDate: "03/2023",
-		toDate: "10/2023",
+		fromDate: "Mar 2023",
+		toDate: "Oct 2023",
 		technologies:
 			"Typescript, Vue, Node.js, Google Cloud Playform, TailwindCSS",
 		tasks: [
@@ -56,9 +54,8 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 		number: "03",
 		company: "Huard Technology Services",
 		position: "iOS App Developer",
-		location: "Mexicali, MX",
-		fromDate: "08/2022",
-		toDate: "03/2023",
+		fromDate: "Aug 2022",
+		toDate: "Mar 2023",
 		technologies: "Swift, SwiftUI",
 		tasks: [
 			"Contract-based job, responsible of creating, maintaining and deploying iOS apps according to the client’s needs",
