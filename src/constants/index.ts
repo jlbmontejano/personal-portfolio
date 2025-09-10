@@ -20,7 +20,7 @@ export const TECH_STACK: TechStack[] = [
 			"NodeJS",
 			"Express",
 			"SwiftUI",
-			"Tailwind",
+			"Tailwind CSS",
 			"Prisma",
 		],
 	},
@@ -39,7 +39,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 		fromDate: "Oct 2023",
 		toDate: "Jan 2025",
 		technologies:
-			"Typescript, React, Node.js, PostgreSQL, Prisma, TailwindCSS",
+			"Typescript, React, Node.js, PostgreSQL, Prisma, Tailwind CSS",
 		tasks: [
 			"Architected the foundational structure for an internal basketball player scouting application",
 			"Implemented secure user authentication system and responsive multi-page UI from the ground up",
@@ -53,7 +53,8 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 		position: "Full Stack Developer",
 		fromDate: "Mar 2023",
 		toDate: "Oct 2023",
-		technologies: "Typescript, Vue, Node.js, Google Firestore, TailwindCSS",
+		technologies:
+			"Typescript, Vue, Node.js, Google Firestore, Tailwind CSS",
 		tasks: [
 			"Developed key components for company's landing page including interactive contact forms and client portfolio showcase implementing a responsive design",
 			"Incorporated extensive validation mechanisms to streamline data collection and ",
