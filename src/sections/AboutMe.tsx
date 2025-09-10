@@ -10,23 +10,24 @@ const AboutMe = () => {
 			<div data-aos='fade-up' className='section-container'>
 				<p className='section-title'>── About Me</p>
 				<div className='flex flex-col gap-10 xl:flex-row'>
-					<div className='w-full xl:pr-14'>
+					<div className='flex w-full flex-col gap-7 xl:pr-14'>
 						<p>
-							Software engineer with 2 years of full-stack web
-							development experience specialized in modern
-							technologies like React, Node and PostgreSQL.
-							Passionate about building scalable, user-focused
-							applications and solving real-world problems through
-							clean, maintainable code.
+							Full-stack developer with 2 years of experience
+							building web and mobile applications using React,
+							Node.js, and PostgreSQL. Proven ability to rapidly
+							learn new technologies and solve complex technical
+							challenges.
 						</p>
-						<p className='pt-7'>
+						<p>
 							I’m someone who values collaboration and enjoys
 							being part of a team that shares knowledge and
 							builds things that matter. I pay close attention to
 							detail and take pride in writing code that's both
-							clean and practical. Outside of tech, I enjoy music,
-							video games, gardening, and hanging out with my
-							cats.
+							clean and practical.
+						</p>
+						<p>
+							Outside of tech, I enjoy music, video games,
+							gardening, and hanging out with my cats.
 						</p>
 					</div>
 					<div className='grid w-full grid-cols-1 sm:grid-cols-2'>
