@@ -26,7 +26,7 @@ export const TECH_STACK: TechStack[] = [
 	},
 	{ title: "Databases", data: ["PostgreSQL", "Cloud Firestore"] },
 	{
-		title: "Technical Skills",
+		title: "Tools & Platforms",
 		data: ["Git", "GitHub Actions", "DigitalOcean", "REST APIs"],
 	},
 ];
