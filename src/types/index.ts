@@ -22,7 +22,8 @@ export type Project = {
 	title: string;
 	image: string;
 	description: string;
-	link: string;
+	liveLink: string;
+	githubLink: string;
 };
 
 export type SocialNetwork = {

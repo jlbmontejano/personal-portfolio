@@ -3,6 +3,7 @@ import Menu from "./components/Menu";
 import AboutMe from "./sections/AboutMe";
 import Home from "./sections/Home";
 import Other from "./sections/Other";
+import Projects from "./sections/Projects";
 import WorkExperience from "./sections/WorkExperience";
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
 			<Home />
 			<AboutMe />
 			<WorkExperience />
+			<Projects />
 			<Other />
 			<Footer />
 		</main>

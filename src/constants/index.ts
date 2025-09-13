@@ -1,9 +1,15 @@
-import { MenuOption, SocialNetwork, TechStack, WorkExperience } from "../types";
+import {
+	MenuOption,
+	Project,
+	SocialNetwork,
+	TechStack,
+	WorkExperience,
+} from "../types";
 
 export const MENU_OPTIONS: MenuOption[] = [
 	{ name: "About Me", scrollTo: "about-me" },
 	{ name: "Work Experience", scrollTo: "work-experience" },
-	// { name: "PROJECTS", scrollTo: "projects" },
+	{ name: "Projects", scrollTo: "projects" },
 	{ name: "Other", scrollTo: "other" },
 ];
 
@@ -77,7 +83,16 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 	},
 ];
 
-export const PROJECTS = [];
+export const PROJECTS: Project[] = [
+	{
+		title: "Haiku Minigame",
+		image: "assets/haiku-minigame.webp",
+		description:
+			"Interactive haiku completion game powered by AI that generates poems with one missing line. Users fill in the blank, then receive AI-generated feedback with a 1-10 rating and personalized commentary on their creative contribution.",
+		liveLink: "https://haiku-minigame.vercel.app/",
+		githubLink: "https://github.com/jlbmontejano/haiku-minigame",
+	},
+];
 
 export const SOCIAL_NETWORKS: SocialNetwork[] = [
 	{ name: "LinkedIn", link: "https://www.linkedin.com/in/jlbmontejano/" },

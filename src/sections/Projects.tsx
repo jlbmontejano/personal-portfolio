@@ -6,16 +6,15 @@ const Projects = () => {
 	useAOS();
 
 	return (
-		<div className='section-container' data-aos='fade-up'>
-			<p className='section-title'>── Projects</p>
-			<p>
-				These are some of the projects I've worked on so far. Feel free
-				to look around.
-			</p>
-			<div className='grid grid-cols-2'>
-				{PROJECTS.map((project, projectIdx) => (
-					<IndividualProject project={project} key={projectIdx} />
-				))}
+		<div>
+			<div id='projects' />
+			<div className='section-container' data-aos='fade-up'>
+				<p className='section-title'>── Projects</p>
+				<div>
+					{PROJECTS.map((project, projectIdx) => (
+						<IndividualProject project={project} key={projectIdx} />
+					))}
+				</div>
 			</div>
 		</div>
 	);
