@@ -1,6 +1,6 @@
 const Footer = () => {
 	return (
-		<div className='footer bg-charcoal text-off_white'>
+		<footer className='footer bg-charcoal text-off_white'>
 			<p>Created by Jorge Buenrostro</p>
 			<a
 				href='mailto:jlbmontejano@gmail.com'
@@ -8,7 +8,7 @@ const Footer = () => {
 				rel='noreferrer'>
 				Contact Me
 			</a>
-		</div>
+		</footer>
 	);
 };
 

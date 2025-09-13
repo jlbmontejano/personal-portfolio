@@ -8,11 +8,11 @@ const Menu = () => {
 	};
 
 	return (
-		<div className='menu sticky top-0 z-50 bg-off_white sm:text-lg'>
+		<header className='menu sticky top-0 z-50 bg-off_white sm:text-lg'>
 			<a onClick={() => handleClick("home")} className='animate-fadeIn'>
 				Jorge Buenrostro
 			</a>
-			<div className='flex animate-fadeIn gap-3 lg:gap-6'>
+			<div className='flex animate-fadeIn gap-2 lg:gap-6'>
 				{MENU_OPTIONS.map(option => (
 					<a
 						onClick={() => handleClick(option.scrollTo)}
@@ -21,7 +21,7 @@ const Menu = () => {
 					</a>
 				))}
 			</div>
-		</div>
+		</header>
 	);
 };
 
