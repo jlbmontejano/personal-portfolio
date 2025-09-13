@@ -1,18 +1,16 @@
 import { WorkExperience } from "../types";
 
-type IndividualWorkProps = {
+type IndividualExperienceProps = {
 	work: WorkExperience;
 	zIndex: number;
 };
 
-const IndividualWork = ({ work, zIndex }: IndividualWorkProps) => {
+const IndividualExperience = ({ work, zIndex }: IndividualExperienceProps) => {
 	return (
 		<div
 			className='sticky top-[4rem] flex w-full flex-col bg-white py-[1rem] lg:flex-row'
 			style={{ zIndex }}>
-			<div className='text-3xl font-semibold lg:text-5xl'>
-				{work.number}.
-			</div>
+			<p className='text-3xl font-semibold lg:text-5xl'>{work.number}.</p>
 			<div className='pt-[1rem] lg:pl-[2rem] lg:pt-0'>
 				<div>
 					<p className='text-lg font-semibold lg:text-2xl'>
@@ -33,4 +31,4 @@ const IndividualWork = ({ work, zIndex }: IndividualWorkProps) => {
 	);
 };
 
-export default IndividualWork;
+export default IndividualExperience;

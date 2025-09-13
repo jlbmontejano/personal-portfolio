@@ -8,7 +8,7 @@ import {
 
 export const MENU_OPTIONS: MenuOption[] = [
 	{ name: "About Me", scrollTo: "about-me" },
-	{ name: "Work Experience", scrollTo: "work-experience" },
+	{ name: "Experience", scrollTo: "experience" },
 	{ name: "Projects", scrollTo: "projects" },
 	{ name: "Other", scrollTo: "other" },
 ];
@@ -37,7 +37,7 @@ export const TECH_STACK: TechStack[] = [
 	},
 ];
 
-export const WORK_EXPERIENCE: WorkExperience[] = [
+export const EXPERIENCE: WorkExperience[] = [
 	{
 		number: "01",
 		company: "Sportsminers",
