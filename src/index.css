@@ -44,6 +44,19 @@ html {
 	}
 
 	.section-title {
-		@apply text-custom_gray text-xl font-semibold;
+		@apply text-xl font-semibold text-custom_gray;
+	}
+
+	.underline-animate {
+		@apply relative;
+	}
+
+	.underline-animate::before {
+		@apply absolute bottom-0 left-0 h-0.5 w-0 bg-current transition-all duration-300 ease-out;
+		content: "";
+	}
+
+	.underline-animate-active::before {
+		@apply w-full;
 	}
 }
