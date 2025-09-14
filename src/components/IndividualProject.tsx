@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowUp } from "react-icons/io";
 import { Project } from "../types";
 
 const IndividualProject = ({ project }: { project: Project }) => {
@@ -11,7 +11,7 @@ const IndividualProject = ({ project }: { project: Project }) => {
 				<div
 					className='group flex items-center justify-center gap-1 hover:cursor-pointer'
 					onClick={() => setIsOpen(!isOpen)}>
-					<IoIosArrowDown
+					<IoIosArrowUp
 						className={`transition-transform duration-300 ease-in-out ${isOpen ? "rotate-180" : "rotate-0"}`}
 					/>
 
