@@ -88,7 +88,7 @@ export const PROJECTS: Project[] = [
 		title: "Haiku Minigame",
 		image: "assets/haiku-minigame.webp",
 		description:
-			"Interactive haiku completion game powered by AI that generates poems with one missing line. Users fill in the blank, then receive AI-generated feedback with a 1-10 rating and personalized commentary on their creative contribution.",
+			"Interactive haiku completion game powered by AI that generates poems with one missing line. Users fill in the blank, then receive AI-generated feedback with a 1-10 rating and personalized commentary on their creative contribution. Initial load may take 30-60 seconds as the backend spins up (free hosting tier).",
 		liveLink: "https://haiku-minigame.vercel.app/",
 		githubLink: "https://github.com/jlbmontejano/haiku-minigame",
 	},
