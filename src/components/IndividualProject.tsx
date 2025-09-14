@@ -6,7 +6,7 @@ const IndividualProject = ({ project }: { project: Project }) => {
 	const [isOpen, setIsOpen] = useState<boolean>(false);
 
 	return (
-		<div className='flex flex-col gap-2'>
+		<div className='flex flex-col gap-4'>
 			<div className='flex justify-between'>
 				<div
 					className='group flex items-center justify-center gap-1 hover:cursor-pointer'
@@ -50,7 +50,7 @@ const IndividualProject = ({ project }: { project: Project }) => {
 					/>
 				</a>
 			</div>
-			<hr className='mt-4' />
+			<hr className='my-4' />
 		</div>
 	);
 };
