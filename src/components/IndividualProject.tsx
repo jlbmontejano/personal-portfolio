@@ -37,12 +37,12 @@ const IndividualProject = ({ project }: { project: Project }) => {
 						? "max-h-screen translate-y-0 opacity-100"
 						: "max-h-0 -translate-y-4 opacity-0"
 				}`}>
-				<p>{project.description}</p>
+				<p className='pl-5'>{project.description}</p>
 				<a
 					href={project.liveLink}
 					target='_blank'
 					rel='noopener noreferrer'
-					className='block transition-opacity duration-200 hover:opacity-80'>
+					className='block pl-5 transition-opacity duration-200 hover:opacity-80 md:pl-0'>
 					<img
 						src={project.image}
 						alt={`${project.title}-project`}
