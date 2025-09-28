@@ -6,10 +6,10 @@ const Experience = () => {
 	useAOS();
 
 	return (
-		<div>
+		<section aria-label='Experience'>
 			<div id='experience' />
 			<div className='section-container' data-aos='fade-up'>
-				<p className='section-title'>── Experience</p>
+				<h2 className='section-title'>── Experience</h2>
 				<div className='flex w-full flex-col gap-7'>
 					{EXPERIENCE.map((work, workIdx) => (
 						<IndividualExperience
@@ -20,7 +20,7 @@ const Experience = () => {
 					))}
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

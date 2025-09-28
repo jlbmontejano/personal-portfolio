@@ -7,11 +7,13 @@ const Home = () => {
 	return (
 		<div className='section-container h-screen justify-center bg-off_white'>
 			<div data-aos='fade-right'>
-				<div>
-					<p className='text-5xl font-bold'>HI,</p>
-					<p className='text-4xl'>my name is</p>
-					<p className='text-4xl font-bold'>Jorge Buenrostro</p>
-				</div>
+				<h1>
+					<span className='block text-5xl font-bold'>HI,</span>
+					<span className='block text-4xl'>my name is</span>
+					<span className='block text-4xl font-bold'>
+						Jorge Buenrostro
+					</span>
+				</h1>
 				<div className='text-xl'>
 					<p>a Full Stack Developer </p>
 				</div>

@@ -4,12 +4,12 @@ const Other = () => {
 	useAOS();
 
 	return (
-		<div>
+		<section aria-label='Other'>
 			<div id='other' />
 			<div className='section-container'>
-				<p className='section-title' data-aos='fade-up'>
+				<h2 className='section-title' data-aos='fade-up'>
 					── Other
-				</p>
+				</h2>
 				<div data-aos='fade-up'>
 					<p className='font-bold'>Education:</p>
 					<p>Centro Universitario de Estudios Musicales</p>
@@ -29,7 +29,7 @@ const Other = () => {
 					<p>Auckland, New Zealand</p>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

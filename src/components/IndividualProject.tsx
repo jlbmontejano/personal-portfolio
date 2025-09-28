@@ -15,9 +15,9 @@ const IndividualProject = ({ project }: { project: Project }) => {
 						className={`transition-transform duration-300 ease-in-out ${isOpen ? "rotate-180" : "rotate-0"}`}
 					/>
 
-					<p className='underline-animate group-hover:underline-animate-active text-lg font-semibold lg:text-2xl'>
+					<h3 className='underline-animate group-hover:underline-animate-active text-lg font-semibold lg:text-2xl'>
 						{project.title}
-					</p>
+					</h3>
 				</div>
 				<div className='flex items-center justify-center gap-3'>
 					<a href={project.liveLink} target='_blank' rel='noreferrer'>

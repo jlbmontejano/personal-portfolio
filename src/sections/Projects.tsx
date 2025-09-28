@@ -6,17 +6,17 @@ const Projects = () => {
 	useAOS();
 
 	return (
-		<div>
+		<section aria-label='Projects'>
 			<div id='projects' />
 			<div className='section-container' data-aos='fade-up'>
-				<p className='section-title'>── Projects</p>
+				<h2 className='section-title'>── Projects</h2>
 				<div>
 					{PROJECTS.map((project, projectIdx) => (
 						<IndividualProject project={project} key={projectIdx} />
 					))}
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

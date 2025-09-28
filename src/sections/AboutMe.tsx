@@ -5,10 +5,10 @@ const AboutMe = () => {
 	useAOS();
 
 	return (
-		<div>
+		<section aria-label='About Me'>
 			<div id='about-me' />
 			<div data-aos='fade-up' className='section-container'>
-				<p className='section-title'>── About Me</p>
+				<h2 className='section-title'>── About Me</h2>
 				<div className='flex flex-col gap-10 xl:flex-row'>
 					<div className='flex w-full flex-col gap-7 xl:pr-14'>
 						<p>
@@ -44,7 +44,7 @@ const AboutMe = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 
