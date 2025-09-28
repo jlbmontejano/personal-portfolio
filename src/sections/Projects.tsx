@@ -1,20 +1,17 @@
-import { PROJECTS } from "../constants";
-import useAOS from "../customHooks/useAos";
 import IndividualProject from "../components/IndividualProject";
+import { PROJECTS } from "../constants";
 
 const Projects = () => {
-	useAOS();
-
 	return (
-		<section aria-label='Projects'>
-			<div id='projects' />
-			<div className='section-container' data-aos='fade-up'>
-				<h2 className='section-title'>── Projects</h2>
-				<div>
-					{PROJECTS.map((project, projectIdx) => (
-						<IndividualProject project={project} key={projectIdx} />
-					))}
-				</div>
+		<section
+			className='section-container'
+			id='projects'
+			aria-label='Projects'>
+			<h2 className='section-title'>── Projects</h2>
+			<div>
+				{PROJECTS.map((project, projectIdx) => (
+					<IndividualProject project={project} key={projectIdx} />
+				))}
 			</div>
 		</section>
 	);
