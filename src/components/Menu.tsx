@@ -9,16 +9,18 @@ const Menu = () => {
 
 	return (
 		<header className='menu sticky top-0 z-50 bg-off_white sm:text-lg'>
-			<a onClick={() => handleClick("home")} className='animate-fadeIn'>
+			<button
+				onClick={() => handleClick("home")}
+				className='animate-fadeIn'>
 				Jorge Buenrostro
-			</a>
+			</button>
 			<div className='flex animate-fadeIn gap-2 lg:gap-6'>
 				{MENU_OPTIONS.map(option => (
-					<a
+					<button
 						onClick={() => handleClick(option.scrollTo)}
 						key={option.name}>
 						{option.name}
-					</a>
+					</button>
 				))}
 			</div>
 		</header>

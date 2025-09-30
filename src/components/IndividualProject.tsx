@@ -8,17 +8,17 @@ const IndividualProject = ({ project }: { project: Project }) => {
 	return (
 		<div className='flex flex-col gap-4'>
 			<div className='flex justify-between'>
-				<div
-					className='group flex items-center justify-center gap-1 hover:cursor-pointer'
+				<button
+					className='group flex items-center justify-center gap-2 hover:cursor-pointer'
 					onClick={() => setIsOpen(!isOpen)}>
 					<IoIosArrowUp
+						aria-hidden
 						className={`transition-transform duration-300 ease-in-out ${isOpen ? "rotate-180" : "rotate-0"}`}
 					/>
-
 					<h3 className='underline-animate group-hover:underline-animate-active text-lg font-semibold lg:text-2xl'>
 						{project.title}
 					</h3>
-				</div>
+				</button>
 				<div className='flex items-center justify-center gap-3'>
 					<a href={project.liveLink} target='_blank' rel='noreferrer'>
 						Live
@@ -37,12 +37,12 @@ const IndividualProject = ({ project }: { project: Project }) => {
 						? "max-h-screen translate-y-0 opacity-100"
 						: "max-h-0 -translate-y-4 opacity-0"
 				}`}>
-				<p className='pl-5'>{project.description}</p>
+				<p className='ml-6'>{project.description}</p>
 				<a
 					href={project.liveLink}
 					target='_blank'
 					rel='noopener noreferrer'
-					className='block pl-5 transition-opacity duration-200 hover:opacity-80 md:pl-0'>
+					className='block pl-6 transition-opacity duration-200 hover:opacity-80 md:pl-0'>
 					<img
 						src={project.image}
 						alt={`${project.title}-project`}
