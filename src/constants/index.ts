@@ -33,7 +33,7 @@ export const TECH_STACK: TechStack[] = [
 	{ title: "Databases", data: ["PostgreSQL", "Cloud Firestore"] },
 	{
 		title: "Tools & Platforms",
-		data: ["Git", "GitHub Actions", "DigitalOcean", "REST APIs"],
+		data: ["Git", "GitHub Actions", "REST APIs"],
 	},
 ];
 
@@ -86,11 +86,19 @@ export const EXPERIENCE: WorkExperience[] = [
 export const PROJECTS: Project[] = [
 	{
 		title: "Haiku Minigame",
-		image: "assets/haiku-minigame.webp",
+		image: "assets/haiku-minigame/HM-welcome.webp",
 		description:
 			"Interactive haiku completion game powered by AI that generates poems with one missing line. Users fill in the blank, then receive AI-generated feedback with a 1-10 rating and personalized commentary on their creative contribution. Initial load may take 30-60 seconds as the backend spins up (free hosting tier).",
 		liveLink: "https://haiku-minigame.vercel.app/",
 		githubLink: "https://github.com/jlbmontejano/haiku-minigame",
+	},
+	{
+		title: "Let Us Dine",
+		image: "assets/let-us-dine/LUD-welcome.webp",
+		description:
+			"Collaborative dining decision app that takes the guesswork out of choosing where to eat with friends. Users can create a shared session and invite their group using a simple session ID. Each person completes a quick quiz about their dining preferences, and our algorithm analyzes everyone's responses to generate personalized restaurant recommendations that satisfy the entire group.",
+		liveLink: "https://let-us-dine-frontend.onrender.com/",
+		githubLink: "https://github.com/jlbmontejano/let-us-dine",
 	},
 ];
 
