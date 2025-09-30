@@ -34,8 +34,8 @@ const IndividualProject = ({ project }: { project: Project }) => {
 			<div
 				className={`grid grid-cols-1 gap-2 transition-all duration-500 ease-in-out md:grid-cols-2 ${
 					isOpen
-						? "max-h-screen translate-y-0 opacity-100"
-						: "max-h-0 -translate-y-4 opacity-0"
+						? "pointer-events-auto max-h-screen translate-y-0 opacity-100"
+						: "pointer-events-none max-h-0 -translate-y-4 opacity-0"
 				}`}>
 				<p className='ml-6'>{project.description}</p>
 				<a
