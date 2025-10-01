@@ -96,7 +96,7 @@ export const PROJECTS: Project[] = [
 		title: "Let Us Dine",
 		image: "assets/let-us-dine/LUD-welcome.webp",
 		description:
-			"Collaborative dining decision app that takes the guesswork out of choosing where to eat with friends. Users can create a shared session and invite their group using a simple session ID. Each person completes a quick quiz about their dining preferences, and our algorithm analyzes everyone's responses to generate personalized restaurant recommendations that satisfy the entire group.",
+			"Collaborative dining decision app that takes the guesswork out of choosing where to eat with friends. Users can create a shared session and invite their group using a simple session ID. Each person completes a quick quiz about their dining preferences, and our algorithm manually processes the results from the Google Maps API to generate personalized restaurant recommendations that satisfy the entire group.",
 		liveLink: "https://let-us-dine-frontend.onrender.com/",
 		githubLink: "https://github.com/jlbmontejano/let-us-dine",
 	},
