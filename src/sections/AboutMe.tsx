@@ -14,10 +14,10 @@ const AboutMe = () => {
 			<div className='flex flex-col gap-10 xl:flex-row'>
 				<div className='flex w-full flex-col gap-7 xl:pr-14'>
 					<p>
-						Full-stack developer with 2 years of experience building
-						web and mobile applications using React, Node.js, and
-						PostgreSQL. Proven ability to rapidly learn new
-						technologies and solve complex technical challenges.
+						Full-stack developer skilled in building web and mobile
+						applications using React, Node.js, and PostgreSQL.
+						Proven ability to rapidly learn new technologies and
+						solve complex technical challenges.
 					</p>
 					<p>
 						I’m someone who values collaboration and enjoys being
