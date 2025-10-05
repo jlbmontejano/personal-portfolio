@@ -86,7 +86,20 @@ export const EXPERIENCE: WorkExperience[] = [
 export const PROJECTS: Project[] = [
 	{
 		title: "Haiku Minigame",
-		image: "assets/haiku-minigame/HM-welcome.webp",
+		images: [
+			{
+				url: "haiku-minigame/HM-welcome.webp",
+				alt: "Haiku Minigame Welcome Page",
+			},
+			{
+				url: "haiku-minigame/HM-input.webp",
+				alt: "Haiku Minigame Input Page",
+			},
+			{
+				url: "haiku-minigame/HM-rating.webp",
+				alt: "Haiku Minigame Rating Page",
+			},
+		],
 		description:
 			"Interactive haiku completion game powered by AI that generates poems with one missing line. Users fill in the blank, then receive AI-generated feedback with a 1-10 rating and personalized commentary on their creative contribution. Initial load may take 30-60 seconds as the backend spins up (free hosting tier).",
 		liveLink: "https://haiku-minigame.vercel.app/",
@@ -94,7 +107,28 @@ export const PROJECTS: Project[] = [
 	},
 	{
 		title: "Let Us Dine",
-		image: "assets/let-us-dine/LUD-welcome.webp",
+		images: [
+			{
+				url: "let-us-dine/LUD-welcome.webp",
+				alt: "Let Us Dine Welcome Page",
+			},
+			{
+				url: "let-us-dine/LUD-setup.webp",
+				alt: "Let Us Dine Seup Page",
+			},
+			{
+				url: "let-us-dine/LUD-submit.webp",
+				alt: "Let Us Dine Submit Page",
+			},
+			{
+				url: "let-us-dine/LUD-progress.webp",
+				alt: "Let Us Dine Progress Page",
+			},
+			{
+				url: "let-us-dine/LUD-results.webp",
+				alt: "Let Us Dine Results Page",
+			},
+		],
 		description:
 			"Collaborative dining decision app that takes the guesswork out of choosing where to eat with friends. Users can create a shared session and invite their group using a simple session ID. Each person completes a quick quiz about their dining preferences, and our algorithm manually processes the results from the Google Maps API to generate personalized restaurant recommendations that satisfy the entire group.",
 		liveLink: "https://let-us-dine-frontend.onrender.com/",

@@ -20,7 +20,7 @@ export type WorkExperience = {
 
 export type Project = {
 	title: string;
-	image: string;
+	images: { url: string; alt: string }[];
 	description: string;
 	liveLink: string;
 	githubLink: string;
