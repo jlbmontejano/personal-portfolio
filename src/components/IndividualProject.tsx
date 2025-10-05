@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 import { Project } from "../types";
+import Carousel from "./Carousel";
 
 const IndividualProject = ({ project }: { project: Project }) => {
 	const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -32,25 +33,15 @@ const IndividualProject = ({ project }: { project: Project }) => {
 				</div>
 			</div>
 			<div
-				className={`grid grid-cols-1 gap-2 transition-all duration-500 ease-in-out md:grid-cols-2 ${
+				className={`grid grid-cols-1 gap-2 transition-all duration-500 ease-in-out lg:grid-cols-2 ${
 					isOpen
-						? "pointer-events-auto max-h-screen translate-y-0 opacity-100"
+						? "pointer-events-auto max-h-full translate-y-0 opacity-100"
 						: "pointer-events-none max-h-0 -translate-y-4 opacity-0"
 				}`}>
 				<p className='ml-6'>{project.description}</p>
-				<a
-					href={project.liveLink}
-					target='_blank'
-					rel='noopener noreferrer'
-					className='block pl-6 transition-opacity duration-200 hover:opacity-80 md:pl-0'>
-					<img
-						src={project.image}
-						alt={`${project.title}-project`}
-						className='rounded-xl'
-					/>
-				</a>
+				<Carousel liveLink={project.liveLink} images={project.images} />
 			</div>
-			<hr className='my-4' />
+			<hr className='col-span-full my-4' />
 		</div>
 	);
 };
