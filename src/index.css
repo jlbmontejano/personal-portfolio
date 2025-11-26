@@ -63,4 +63,21 @@ html {
 	.carousel-btn {
 		@apply absolute top-1/2 z-20 -translate-y-1/2 rounded-full bg-black/40 p-2 text-white hover:bg-black/60 focus:outline-none;
 	}
+
+	#contact-form {
+		@apply text-sm;
+	}
+
+	#contact-form label {
+		@apply font-semibold;
+	}
+
+	#contact-form input,
+	#contact-form textarea {
+		@apply rounded;
+	}
+
+	#contact-form button {
+		@apply w-fit self-center rounded-lg bg-black px-4 py-2 text-custom_gray;
+	}
 }

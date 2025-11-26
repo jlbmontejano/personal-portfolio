@@ -1,5 +1,4 @@
 import { SOCIAL_NETWORKS } from "../constants";
-import ContactMe from "./ContactMe";
 
 const SocialNetworks = () => {
 	return (
@@ -19,7 +18,6 @@ const SocialNetworks = () => {
 				rel='noreferrer'>
 				Resume
 			</a>
-			<ContactMe />
 		</div>
 	);
 };
