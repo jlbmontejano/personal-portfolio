@@ -1,21 +1,103 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "tw-animate-css";
 
-html {
-	color: #212121;
-	font-size: 14px;
+@custom-variant dark (&:is(.dark *));
 
-	@screen md {
-		font-size: 16px;
+@theme {
+	--font-*: initial;
+	--font-sans: Inter;
+
+	--animate-*: initial;
+	--animate-fade-in: fadeIn 1s ease-out forwards;
+
+	--color-off_white: #f8f9fa;
+	--color-custom_gray: #aeaeae;
+	--color-charcoal: #212121;
+	--color-accent: #e3caa6;
+
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
 	}
+}
 
-	@screen lg {
-		font-size: 20px;
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentcolor);
 	}
+}
 
-	@screen xl {
-		font-size: 22px;
+@utility horizontal-padding {
+	@apply px-[.75rem] md:px-8 lg:px-20;
+}
+
+@utility menu {
+	@apply horizontal-padding flex w-full justify-between py-4 text-sm;
+}
+
+@utility footer {
+	@apply horizontal-padding flex w-full justify-between py-4 text-sm;
+}
+
+@utility section-container {
+	@apply horizontal-padding flex w-full flex-col gap-7 py-18;
+}
+
+@utility section-title {
+	@apply text-custom_gray text-xl font-semibold;
+}
+
+@utility underline-animate {
+	@apply relative;
+
+	&::before {
+		@apply absolute bottom-0 left-0 h-0.5 w-0 bg-current transition-all duration-300 ease-out;
+		content: "";
+	}
+}
+
+@utility underline-animate-active {
+	&::before {
+		@apply w-full;
+	}
+}
+
+@utility carousel-btn {
+	@apply absolute top-1/2 z-20 -translate-y-1/2 rounded-full bg-black/40 p-2 text-white hover:bg-black/60 focus:outline-hidden;
+}
+
+@layer utilities {
+	html {
+		color: #212121;
+		font-size: 14px;
+
+		@media (width >= theme(--breakpoint-md)) {
+			font-size: 16px;
+		}
+
+		@media (width >= theme(--breakpoint-lg)) {
+			font-size: 20px;
+		}
+
+		@media (width >= theme(--breakpoint-xl)) {
+			font-size: 22px;
+		}
 	}
 }
 
@@ -25,59 +107,138 @@ html {
 	}
 
 	a {
-		@apply transition-colors duration-500 hover:cursor-pointer hover:text-accent;
+		@apply transition-colors duration-500 hover:cursor-pointer hover:text-[#e3caa6];
 	}
 }
 
-@layer components {
-	.horizontal-padding {
-		@apply px-[.75rem] md:px-[2rem] lg:px-[5rem];
-	}
+/*
+  ---break---
+*/
 
-	.menu,
-	.footer {
-		@apply horizontal-padding flex w-full justify-between py-[1rem] text-sm;
-	}
+@theme inline {
+	--radius-sm: calc(var(--radius) - 4px);
+	--radius-md: calc(var(--radius) - 2px);
+	--radius-lg: var(--radius);
+	--radius-xl: calc(var(--radius) + 4px);
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-card: var(--card);
+	--color-card-foreground: var(--card-foreground);
+	--color-popover: var(--popover);
+	--color-popover-foreground: var(--popover-foreground);
+	--color-primary: var(--primary);
+	--color-primary-foreground: var(--primary-foreground);
+	--color-secondary: var(--secondary);
+	--color-secondary-foreground: var(--secondary-foreground);
+	--color-muted: var(--muted);
+	--color-muted-foreground: var(--muted-foreground);
+	--color-accent: var(--accent);
+	--color-accent-foreground: var(--accent-foreground);
+	--color-destructive: var(--destructive);
+	--color-border: var(--border);
+	--color-input: var(--input);
+	--color-ring: var(--ring);
+	--color-chart-1: var(--chart-1);
+	--color-chart-2: var(--chart-2);
+	--color-chart-3: var(--chart-3);
+	--color-chart-4: var(--chart-4);
+	--color-chart-5: var(--chart-5);
+	--color-sidebar: var(--sidebar);
+	--color-sidebar-foreground: var(--sidebar-foreground);
+	--color-sidebar-primary: var(--sidebar-primary);
+	--color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+	--color-sidebar-accent: var(--sidebar-accent);
+	--color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+	--color-sidebar-border: var(--sidebar-border);
+	--color-sidebar-ring: var(--sidebar-ring);
+}
 
-	.section-container {
-		@apply horizontal-padding flex w-full flex-col gap-7 py-[4.5rem];
-	}
+/*
+  ---break---
+*/
 
-	.section-title {
-		@apply text-xl font-semibold text-custom_gray;
-	}
+:root {
+	--radius: 0.625rem;
+	--background: oklch(1 0 0);
+	--foreground: oklch(0.145 0 0);
+	--card: oklch(1 0 0);
+	--card-foreground: oklch(0.145 0 0);
+	--popover: oklch(1 0 0);
+	--popover-foreground: oklch(0.145 0 0);
+	--primary: oklch(0.205 0 0);
+	--primary-foreground: oklch(0.985 0 0);
+	--secondary: oklch(0.97 0 0);
+	--secondary-foreground: oklch(0.205 0 0);
+	--muted: oklch(0.97 0 0);
+	--muted-foreground: oklch(0.556 0 0);
+	--accent: oklch(0.97 0 0);
+	--accent-foreground: oklch(0.205 0 0);
+	--destructive: oklch(0.577 0.245 27.325);
+	--border: oklch(0.922 0 0);
+	--input: oklch(0.922 0 0);
+	--ring: oklch(0.708 0 0);
+	--chart-1: oklch(0.646 0.222 41.116);
+	--chart-2: oklch(0.6 0.118 184.704);
+	--chart-3: oklch(0.398 0.07 227.392);
+	--chart-4: oklch(0.828 0.189 84.429);
+	--chart-5: oklch(0.769 0.188 70.08);
+	--sidebar: oklch(0.985 0 0);
+	--sidebar-foreground: oklch(0.145 0 0);
+	--sidebar-primary: oklch(0.205 0 0);
+	--sidebar-primary-foreground: oklch(0.985 0 0);
+	--sidebar-accent: oklch(0.97 0 0);
+	--sidebar-accent-foreground: oklch(0.205 0 0);
+	--sidebar-border: oklch(0.922 0 0);
+	--sidebar-ring: oklch(0.708 0 0);
+}
 
-	.underline-animate {
-		@apply relative;
-	}
+/*
+  ---break---
+*/
 
-	.underline-animate::before {
-		@apply absolute bottom-0 left-0 h-0.5 w-0 bg-current transition-all duration-300 ease-out;
-		content: "";
-	}
+.dark {
+	--background: oklch(0.145 0 0);
+	--foreground: oklch(0.985 0 0);
+	--card: oklch(0.205 0 0);
+	--card-foreground: oklch(0.985 0 0);
+	--popover: oklch(0.205 0 0);
+	--popover-foreground: oklch(0.985 0 0);
+	--primary: oklch(0.922 0 0);
+	--primary-foreground: oklch(0.205 0 0);
+	--secondary: oklch(0.269 0 0);
+	--secondary-foreground: oklch(0.985 0 0);
+	--muted: oklch(0.269 0 0);
+	--muted-foreground: oklch(0.708 0 0);
+	--accent: oklch(0.269 0 0);
+	--accent-foreground: oklch(0.985 0 0);
+	--destructive: oklch(0.704 0.191 22.216);
+	--border: oklch(1 0 0 / 10%);
+	--input: oklch(1 0 0 / 15%);
+	--ring: oklch(0.556 0 0);
+	--chart-1: oklch(0.488 0.243 264.376);
+	--chart-2: oklch(0.696 0.17 162.48);
+	--chart-3: oklch(0.769 0.188 70.08);
+	--chart-4: oklch(0.627 0.265 303.9);
+	--chart-5: oklch(0.645 0.246 16.439);
+	--sidebar: oklch(0.205 0 0);
+	--sidebar-foreground: oklch(0.985 0 0);
+	--sidebar-primary: oklch(0.488 0.243 264.376);
+	--sidebar-primary-foreground: oklch(0.985 0 0);
+	--sidebar-accent: oklch(0.269 0 0);
+	--sidebar-accent-foreground: oklch(0.985 0 0);
+	--sidebar-border: oklch(1 0 0 / 10%);
+	--sidebar-ring: oklch(0.556 0 0);
+}
 
-	.underline-animate-active::before {
-		@apply w-full;
-	}
+/*
+  ---break---
+*/
 
-	.carousel-btn {
-		@apply absolute top-1/2 z-20 -translate-y-1/2 rounded-full bg-black/40 p-2 text-white hover:bg-black/60 focus:outline-none;
+@layer base {
+	* {
+		@apply border-border outline-ring/50;
 	}
-
-	#contact-form {
-		@apply text-sm;
-	}
-
-	#contact-form label {
-		@apply font-semibold;
-	}
-
-	#contact-form input,
-	#contact-form textarea {
-		@apply rounded;
-	}
-
-	#contact-form button {
-		@apply w-fit self-center rounded-lg bg-black px-4 py-2 text-custom_gray;
+	body {
+		@apply bg-background text-foreground;
 	}
 }
