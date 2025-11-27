@@ -1,48 +1,129 @@
+import { Button } from "@/components/ui/button";
+import {
+	Form,
+	FormControl,
+	FormDescription,
+	FormField,
+	FormItem,
+	FormLabel,
+	FormMessage,
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { contactMeSchema } from "@/lib/zod/schemas";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { toast } from "sonner";
+import { z } from "zod";
 
 export default function ContactForm() {
-	const [result, setResult] = useState("");
 	const [isSubmitting, setIsSubmitting] = useState(false);
 
-	const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-		event.preventDefault();
+	const form = useForm<z.infer<typeof contactMeSchema>>({
+		resolver: zodResolver(contactMeSchema),
+		defaultValues: {
+			name: "",
+			email: "",
+			message: "",
+		},
+	});
+
+	const onSubmit = async (values: z.infer<typeof contactMeSchema>) => {
 		setIsSubmitting(true);
-		const formData = new FormData(event.target as HTMLFormElement);
+		const formData = new FormData();
+		formData.append("name", values.name);
+		formData.append("email", values.email);
+		formData.append("message", values.message);
 		formData.append("access_key", "1a98cdea-0d6e-45f5-8da8-66065f82cbb2");
 
-		const response = await fetch("https://api.web3forms.com/submit", {
-			method: "POST",
-			body: formData,
-		});
+		try {
+			const response = await fetch("https://api.web3forms.com/submit", {
+				method: "POST",
+				body: formData,
+			});
+			const data = await response.json();
 
-		const data = await response.json();
-		setResult(data.success ? "Success!" : "Error");
-		setIsSubmitting(false);
+			if (!data.success) {
+				throw new Error("Error!!!");
+			}
+
+			toast.success("Information sent successfully.");
+			form.reset();
+		} catch (err) {
+			console.log(err);
+			toast.error("Error sending information. Please try again.");
+		} finally {
+			setIsSubmitting(false);
+		}
 	};
 
 	return (
-		<section className='section-container' id='other' aria-label='Other'>
+		<section
+			className='section-container'
+			id='contact-me'
+			aria-label='Other'>
 			<h2 className='section-title'>── Contact Me</h2>
-			<form
-				onSubmit={onSubmit}
-				className='flex max-w-xl flex-col space-y-2 rounded-xl bg-custom_gray p-4'
-				id='contact-form'>
-				<label htmlFor='name'>Name:</label>
-				<input
-					type='text'
-					name='name'
-					required
-					className='border border-solid border-black'
-				/>
-				<label htmlFor='email'>Email:</label>
-				<input type='email' name='email' required />
-				<label htmlFor='message'>Message:</label>
-				<textarea name='message' required></textarea>
-				<button type='submit' disabled={isSubmitting}>
-					Submit
-				</button>
-				<p>{result}</p>
-			</form>
+			<Form {...form}>
+				<form
+					onSubmit={form.handleSubmit(onSubmit)}
+					className='flex w-full max-w-lg flex-col space-y-2'
+					id='contact-form'>
+					<FormField
+						control={form.control}
+						name='name'
+						render={({ field }) => (
+							<FormItem>
+								<FormLabel>Name</FormLabel>
+								<FormControl>
+									<Input {...field} disabled={isSubmitting} />
+								</FormControl>
+								<FormMessage />
+							</FormItem>
+						)}
+					/>
+					<FormField
+						control={form.control}
+						name='email'
+						render={({ field }) => (
+							<FormItem>
+								<FormLabel>Email</FormLabel>
+								<FormControl>
+									<Input {...field} disabled={isSubmitting} />
+								</FormControl>
+								<FormMessage />
+							</FormItem>
+						)}
+					/>
+					<FormField
+						control={form.control}
+						name='message'
+						render={({ field }) => (
+							<FormItem>
+								<FormLabel>Message</FormLabel>
+								<FormControl>
+									<Textarea
+										{...field}
+										disabled={isSubmitting}
+									/>
+								</FormControl>
+								<div className='flex justify-between'>
+									<FormMessage />
+									<FormDescription className='ml-auto'>
+										{form.getValues().message.length} / 1000
+									</FormDescription>
+								</div>
+							</FormItem>
+						)}
+					/>
+					<Button
+						type='submit'
+						disabled={isSubmitting}
+						className='self-center'>
+						{isSubmitting ? "Submitting" : "Submit"}
+					</Button>
+				</form>
+			</Form>
 		</section>
 	);
 }
