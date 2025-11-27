@@ -1,5 +1,5 @@
-import IndividualProject from "../components/IndividualProject";
-import { PROJECTS } from "../constants";
+import IndividualProject from "@/components/IndividualProject";
+import { PROJECTS } from "@/constants";
 
 const Projects = () => {
 	return (

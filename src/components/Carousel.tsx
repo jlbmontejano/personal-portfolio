@@ -39,7 +39,7 @@ const Carousel = ({ liveLink, images }: CarouselProps) => {
 						href={liveLink}
 						target='_blank'
 						rel='noopener noreferrer'
-						className='block h-full w-full flex-shrink-0'
+						className='block h-full w-full shrink-0'
 						aria-hidden={currentIdx !== idx}>
 						<img
 							src={`assets/${url}`}

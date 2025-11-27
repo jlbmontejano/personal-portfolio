@@ -1,6 +1,6 @@
+import { Project } from "@/types";
 import { useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
-import { Project } from "../types";
 import Carousel from "./Carousel";
 
 const IndividualProject = ({ project }: { project: Project }) => {

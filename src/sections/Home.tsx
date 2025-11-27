@@ -1,11 +1,11 @@
-import SocialNetworks from "../components/SocialNetworks";
-import useAOS from "../customHooks/useAos";
+import SocialNetworks from "@/components/SocialNetworks";
+import useAOS from "@/hooks/useAos";
 
 const Home = () => {
 	useAOS();
 
 	return (
-		<div className='section-container h-screen justify-center bg-off_white'>
+		<div className='section-container bg-off_white h-screen justify-center'>
 			<div data-aos='fade-right'>
 				<h1>
 					<span className='block text-5xl font-bold'>HI,</span>

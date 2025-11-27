@@ -1,5 +1,5 @@
-import { TECH_STACK } from "../constants";
-import useAOS from "../customHooks/useAos";
+import { TECH_STACK } from "@/constants";
+import useAOS from "@/hooks/useAos";
 
 const AboutMe = () => {
 	useAOS();

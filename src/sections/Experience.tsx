@@ -1,5 +1,5 @@
-import IndividualExperience from "../components/IndividualExperience";
-import { EXPERIENCE } from "../constants";
+import IndividualExperience from "@/components/IndividualExperience";
+import { EXPERIENCE } from "@/constants";
 
 const Experience = () => {
 	return (
