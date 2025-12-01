@@ -47,10 +47,9 @@ export const EXPERIENCE: WorkExperience[] = [
 		technologies:
 			"Typescript, React, Node.js, PostgreSQL, Prisma, Tailwind CSS",
 		tasks: [
-			"Architected the foundational structure for an internal basketball player scouting application",
-			"Implemented secure user authentication system and responsive multi-page UI from the ground up",
-			"Recommended simplified tech stack over complex cloud services, reducing infrastructure costs and improving development velocity",
 			"Set up automated GitHub Actions CI/CD pipeline for seamless deployment to DigitalOcean, reducing deployment time by 80%",
+			"Architected the foundational structure for an internal basketball player scouting application, reducing the projected infrastructure costs and improving development velocity",
+			"Implemented secure user authentication system and responsive multi-page UI from the ground up",
 		],
 	},
 	{
@@ -62,10 +61,9 @@ export const EXPERIENCE: WorkExperience[] = [
 		technologies:
 			"Typescript, Vue, Node.js, Google Firestore, Tailwind CSS",
 		tasks: [
-			"Developed key components for company's landing page including interactive contact forms and client portfolio showcase implementing a responsive design",
-			"Incorporated extensive validation mechanisms to streamline data collection and ",
-			"Digitized complex government forms for Army veteran aid application system, implementing comprehensive validation logic to ensure data integrity and compliance",
-			"Built profile editing interface for published social media app Catch Zone, enabling users to update and manage their account information",
+			"Developed key components for company's landing page including interactive contact forms and client portfolio showcase, improving lead capture and user engagement through responsive UI",
+			"Digitized complex government aid forms for military veterans, implementing validation logic that reduced processing errors and ensured compliance with official requirements",
+			"Built profile editing interface for published the Catch Zone social media app, enabling users to update and manage personal account information",
 		],
 	},
 	{
@@ -138,5 +136,5 @@ export const PROJECTS: Project[] = [
 
 export const SOCIAL_NETWORKS: SocialNetwork[] = [
 	{ name: "LinkedIn", link: "https://www.linkedin.com/in/jlbmontejano/" },
-	// { name: "GitHub", link: "https://github.com/jlbmontejano" },
+	{ name: "GitHub", link: "https://github.com/jlbmontejano" },
 ];
