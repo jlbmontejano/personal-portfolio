@@ -2,14 +2,13 @@ import { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 type CarouselProps = {
-	liveLink: string;
 	images: {
 		url: string;
 		alt: string;
 	}[];
 };
 
-const Carousel = ({ liveLink, images }: CarouselProps) => {
+const Carousel = ({ images }: CarouselProps) => {
 	const [currentIdx, setCurrentIdx] = useState(0);
 
 	const handlePrev = () => {
@@ -33,20 +32,12 @@ const Carousel = ({ liveLink, images }: CarouselProps) => {
 			<div
 				className='flex h-full transition-transform duration-300'
 				style={{ transform: `translateX(-${currentIdx * 100}%)` }}>
-				{images.map(({ url, alt }, idx) => (
-					<a
-						key={`${url}-${idx}`}
-						href={liveLink}
-						target='_blank'
-						rel='noopener noreferrer'
-						className='block h-full w-full shrink-0'
-						aria-hidden={currentIdx !== idx}>
-						<img
-							src={`assets/${url}`}
-							alt={alt}
-							className='h-full w-full rounded-xl object-cover'
-						/>
-					</a>
+				{images.map(({ url, alt }) => (
+					<img
+						src={`assets/${url}`}
+						alt={alt}
+						className='h-full w-full rounded-xl object-cover'
+					/>
 				))}
 			</div>
 			<button

@@ -39,7 +39,7 @@ const IndividualProject = ({ project }: { project: Project }) => {
 						: "pointer-events-none max-h-0 -translate-y-4 opacity-0"
 				}`}>
 				<p className='ml-6'>{project.description}</p>
-				<Carousel liveLink={project.liveLink} images={project.images} />
+				<Carousel images={project.images} />
 			</div>
 			<hr className='col-span-full my-4' />
 		</div>

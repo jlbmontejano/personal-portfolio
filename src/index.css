@@ -79,7 +79,7 @@
 }
 
 @utility carousel-btn {
-	@apply absolute top-1/2 z-20 -translate-y-1/2 rounded-full bg-black/40 p-2 text-white hover:bg-black/60 focus:outline-hidden;
+	@apply absolute top-1/2 z-20 -translate-y-1/2 rounded-full bg-black/40 p-2 text-white hover:cursor-pointer hover:bg-black/60 focus:outline-hidden;
 }
 
 @layer utilities {
