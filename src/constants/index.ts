@@ -129,7 +129,7 @@ export const PROJECTS: Project[] = [
 		],
 		description:
 			"Collaborative dining decision app that takes the guesswork out of choosing where to eat with friends. Users can create a shared session and invite their group using a simple session ID. Each person completes a quick quiz about their dining preferences, and our algorithm manually processes the results from the Google Maps API to generate personalized restaurant recommendations that satisfy the entire group.",
-		liveLink: "https://let-us-dine-frontend.onrender.com/",
+		liveLink: "https://letusdine.jorgebuenrostro.com",
 		githubLink: "https://github.com/jlbmontejano/let-us-dine",
 	},
 ];
