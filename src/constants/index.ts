@@ -16,24 +16,25 @@ export const MENU_OPTIONS: MenuOption[] = [
 export const TECH_STACK: TechStack[] = [
 	{
 		title: "Languages",
-		data: ["HTML, CSS & JavaScript", "Typescript", "SQL", "Swift"],
+		data: ["Typescript", "HTML, CSS & JavaScript", "SQL", "Swift"],
 	},
 	{
 		title: "Frameworks & Libraries",
 		data: [
 			"React",
-			"Vue",
 			"NodeJS",
 			"Express",
+			"Vue",
+			"Jest",
 			"SwiftUI",
 			"Tailwind CSS",
 			"Prisma",
 		],
 	},
-	{ title: "Databases", data: ["PostgreSQL", "Cloud Firestore"] },
+	{ title: "Databases", data: ["PostgreSQL", "Google Firestore"] },
 	{
 		title: "Tools & Platforms",
-		data: ["Git", "GitHub Actions", "REST APIs"],
+		data: ["Git", "AWS", "Docker", "GitHub Actions", "REST APIs"],
 	},
 ];
 
@@ -48,8 +49,8 @@ export const EXPERIENCE: WorkExperience[] = [
 			"Typescript, React, Node.js, PostgreSQL, Prisma, Tailwind CSS",
 		tasks: [
 			"Set up automated GitHub Actions CI/CD pipeline for seamless deployment to DigitalOcean, reducing deployment time by 80%",
-			"Architected the foundational structure for an internal basketball player scouting application, reducing the projected infrastructure costs and improving development velocity",
-			"Implemented secure user authentication system and responsive multi-page UI from the ground up",
+			"Architected the foundational structure for an internal basketball player scouting application, improving development speed, and reducing infrastructure costs",
+			"Built and deployed secure authentication system and responsive multi-page UI, enabling user account management and protected application access",
 		],
 	},
 	{
