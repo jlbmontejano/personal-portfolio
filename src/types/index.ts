@@ -14,7 +14,6 @@ export type WorkExperience = {
 	position: string;
 	fromDate: string;
 	toDate: string;
-	technologies: string;
 	tasks: string[];
 };
 

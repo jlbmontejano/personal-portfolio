@@ -45,8 +45,6 @@ export const EXPERIENCE: WorkExperience[] = [
 		position: "Full Stack Developer",
 		fromDate: "Oct 2023",
 		toDate: "Jan 2025",
-		technologies:
-			"Typescript, React, Node.js, PostgreSQL, Prisma, Tailwind CSS",
 		tasks: [
 			"Set up automated GitHub Actions CI/CD pipeline for seamless deployment to DigitalOcean, reducing deployment time by 80%",
 			"Architected the foundational structure for an internal basketball player scouting application, improving development speed, and reducing infrastructure costs",
@@ -59,8 +57,6 @@ export const EXPERIENCE: WorkExperience[] = [
 		position: "Full Stack Developer",
 		fromDate: "Mar 2023",
 		toDate: "Oct 2023",
-		technologies:
-			"Typescript, Vue, Node.js, Google Firestore, Tailwind CSS",
 		tasks: [
 			"Developed key components for company's landing page including interactive contact forms and client portfolio showcase, improving lead capture and user engagement through responsive UI",
 			"Digitized complex government aid forms for military veterans, implementing validation logic that reduced processing errors and ensured compliance with official requirements",
@@ -73,7 +69,6 @@ export const EXPERIENCE: WorkExperience[] = [
 		position: "iOS App Developer",
 		fromDate: "Aug 2022",
 		toDate: "Mar 2023",
-		technologies: "Swift, SwiftUI",
 		tasks: [
 			"Contract-based job; self-taught iOS development using Swift/SwiftUI to deliver client project, transitioning from web technologies with no prior mobile development experience",
 			"Developed iOS application for snow-making machine monitoring, implementing Bluetooth communication protocol to parse and display real-time binary data from industrial equipment",
