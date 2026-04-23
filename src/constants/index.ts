@@ -46,7 +46,7 @@ export const EXPERIENCE: WorkExperience[] = [
 		fromDate: "Oct 2023",
 		toDate: "Jan 2025",
 		tasks: [
-			"Set up automated GitHub Actions CI/CD pipeline for seamless deployment to DigitalOcean, reducing deployment time by 80%",
+			"Set up automated GitHub Actions CI/CD pipeline, reducing deployment time by 80%",
 			"Architected the foundational structure for an internal basketball player scouting application, improving development speed, and reducing infrastructure costs",
 			"Built and deployed secure authentication system and responsive multi-page UI, enabling user account management and protected application access",
 		],
