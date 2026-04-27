@@ -111,10 +111,6 @@ export const PROJECTS: Project[] = [
 				alt: "Let Us Dine Seup Page",
 			},
 			{
-				url: "let-us-dine/LUD-submit.webp",
-				alt: "Let Us Dine Submit Page",
-			},
-			{
 				url: "let-us-dine/LUD-progress.webp",
 				alt: "Let Us Dine Progress Page",
 			},
