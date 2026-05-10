@@ -4,7 +4,7 @@ import {
 	SocialNetwork,
 	TechStack,
 	WorkExperience,
-} from "../types";
+} from "@/types";
 
 export const MENU_OPTIONS: MenuOption[] = [
 	{ name: "About Me", scrollTo: "about-me" },
@@ -18,23 +18,32 @@ export const TECH_STACK: TechStack[] = [
 		title: "Languages",
 		data: ["Typescript", "HTML, CSS & JavaScript", "SQL", "Swift"],
 	},
+	{ title: "Databases", data: ["PostgreSQL", "Google Firestore"] },
 	{
 		title: "Frameworks & Libraries",
 		data: [
 			"React",
-			"NodeJS",
+			"Node.js",
 			"Express",
 			"Vue",
-			"Jest",
 			"SwiftUI",
 			"Tailwind CSS",
 			"Prisma",
 		],
 	},
-	{ title: "Databases", data: ["PostgreSQL", "Google Firestore"] },
 	{
 		title: "Tools & Platforms",
-		data: ["Git", "AWS", "Docker", "GitHub Actions", "REST APIs"],
+		data: [
+			"Git",
+			"GitHub Actions",
+			"AWS",
+			"Docker",
+			"Jest",
+			"Vitest",
+			"Playwright",
+			"DigitalOcean",
+			"REST APIs",
+		],
 	},
 ];
 
@@ -72,7 +81,7 @@ export const EXPERIENCE: WorkExperience[] = [
 		tasks: [
 			"Contract-based job; self-taught iOS development using Swift/SwiftUI to deliver client project, transitioning from web technologies with no prior mobile development experience",
 			"Developed iOS application for snow-making machine monitoring, implementing Bluetooth communication protocol to parse and display real-time binary data from industrial equipment",
-			"Designed intuitive interface with streamlined navigation to make complex machine data accessible to non-technical operators ",
+			"Designed intuitive interface to make complex machine data accessible to non-technical operators ",
 		],
 	},
 ];
