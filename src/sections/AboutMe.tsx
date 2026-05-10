@@ -15,17 +15,19 @@ const AboutMe = () => {
 				<div className='flex flex-col gap-10 xl:flex-row'>
 					<div className='flex w-full flex-col gap-7 xl:pr-14'>
 						<p>
-							Full-stack developer skilled in building web and
-							mobile applications using React, Node.js, and
-							PostgreSQL. Proven ability to rapidly learn new
-							technologies and solve complex technical challenges.
+							Full-stack developer with hands-on experience
+							building web and mobile applications using
+							TypeScript, React, Node.js, and PostgreSQL. I care
+							about the full picture, from CI/CD pipelines and
+							Docker deployments to clean UIs and solid test
+							coverage.
 						</p>
 						<p>
-							I’m someone who values collaboration and enjoys
-							being part of a team that shares knowledge and
-							builds things that matter. I pay close attention to
-							detail and take pride in writing code that's both
-							clean and practical.
+							I value collaboration and enjoy being part of a team
+							that shares knowledge and builds things that matter.
+							I pick up new technologies quickly, take pride in
+							writing code that others can maintain, and always
+							keep the end user in mind.
 						</p>
 						<p>
 							Outside of tech, I enjoy music, video games,
