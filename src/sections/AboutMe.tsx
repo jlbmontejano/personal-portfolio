@@ -34,7 +34,7 @@ const AboutMe = () => {
 							gardening, and hanging out with my cats.
 						</p>
 					</div>
-					<div className='grid w-full grid-cols-1 sm:grid-cols-2'>
+					<div className='grid w-full grid-cols-2'>
 						{TECH_STACK.map(stack => (
 							<div className='mb-2' key={stack.title}>
 								<p className='font-bold'> {stack.title}: </p>
