@@ -16,7 +16,7 @@ export const MENU_OPTIONS: MenuOption[] = [
 export const TECH_STACK: TechStack[] = [
 	{
 		title: "Languages",
-		data: ["Typescript", "HTML, CSS & JavaScript", "SQL", "Swift"],
+		data: ["Typescript", "C#", "HTML, CSS & JavaScript", "SQL", "Swift"],
 	},
 	{ title: "Databases", data: ["PostgreSQL", "Google Firestore"] },
 	{
@@ -25,6 +25,7 @@ export const TECH_STACK: TechStack[] = [
 			"React",
 			"Node.js",
 			"Express",
+			"ASP.NET Core",
 			"Vue",
 			"SwiftUI",
 			"Tailwind CSS",
