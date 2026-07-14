@@ -15,12 +15,13 @@ const AboutMe = () => {
 				<div className='flex flex-col gap-10 xl:flex-row'>
 					<div className='flex w-full flex-col gap-7 xl:pr-14'>
 						<p>
-							Full-stack developer with hands-on experience
-							building web and mobile applications using
-							TypeScript, React, Node.js, and PostgreSQL. I care
-							about the full picture, from CI/CD pipelines and
-							Docker deployments to clean UIs and solid test
-							coverage.
+							Full-stack software engineer with hands-on
+							experience across web, mobile, and backend
+							development. Builds production-ready systems using
+							TypeScript, React, Node.js, PostgreSQL, and modern
+							.NET technologies, from responsive user interfaces
+							to deployment pipelines, with a disciplined approach
+							to testing and code quality.
 						</p>
 						<p>
 							I value collaboration and enjoy being part of a team
